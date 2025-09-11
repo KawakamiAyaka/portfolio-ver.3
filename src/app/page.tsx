@@ -11,7 +11,7 @@ export default function Home() {
             <div className="NoteBox">
                 <div className="Binding"></div>
                 <div className="Cover">
-                    <p className={`${Saint.className} SubTitle`}>Kawakami Ayaka's</p>
+                    <p className={`${Saint.className} SubTitle`}>Kawakami Ayaka&rsquo;s</p>
                     <div className="TitleBox">
                         <h1 className="Title">PORTFOLIO</h1>
                     </div>

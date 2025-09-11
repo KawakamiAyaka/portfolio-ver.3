@@ -7,15 +7,6 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Profile() {
-    const events = [
-        { date: "2025年3月", title: "学内展示会 +E展（2年後期）入賞", desc: "" },
-        {
-            date: "2025年3月",
-            title: "Hack U 3回目参加",
-            desc: "Yahoo!JAPANが運営する学生ハッカソン",
-        },
-        // 追加してOK
-    ];
     return (
         <main>
             <Header />
