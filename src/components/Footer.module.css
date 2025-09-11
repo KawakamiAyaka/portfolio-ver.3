@@ -1,0 +1,29 @@
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #777;
+}
+
+.StickyNoteText {
+    width: 500px;
+    height: 50px;
+    padding: 0.5rem;
+    margin: 100px auto 50px auto;
+    text-align: center;
+    border-left: 20px solid #A9E2DB;
+    background-color: #e4fdfa;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+    font-size: 1.5rem;
+    color: #403A2F;
+    line-height: 2;
+    transform: rotate(-3deg);
+}
+
+.dashed {
+    width: 80%;
+    height: 1.5px;
+    margin: 0 auto;
+    background-image: radial-gradient(circle, #c7c7c7 4px, transparent 5px);
+    background-size: 16px 2px;
+}

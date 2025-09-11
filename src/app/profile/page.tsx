@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Heading from "@/components/Heading";
 import BackToTop from "@/components/BackToTop";
 import SkillBar from "@/components/SkillBar";
+import Footer from "@/components/Footer";
+
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -314,6 +316,7 @@ export default function Profile() {
                             </li>
                         </ul>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </main>
