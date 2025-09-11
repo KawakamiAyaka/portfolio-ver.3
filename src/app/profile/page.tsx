@@ -170,8 +170,15 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     Hack U　3回目 参加 <br />
-                                    <small className={styles.link}>
-                                        LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                    <small>
+                                        <a
+                                            href="https://hacku.yahoo.co.jp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -180,10 +187,17 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     専門学校HTML5作品アワード　入賞 <br />
-                                    <small className={styles.link}>
-                                        日本国内の専門学校生がHTML5技術をメインに使用して制作したアプリ、Webサービス、Webサイトなどの作品を
-                                        <br />
-                                        対象としたコンテスト
+                                    <small>
+                                        <a
+                                            href="https://html5award.com//"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            日本国内の専門学校生がHTML5技術をメインに使用して制作したアプリ、Webサービス、Webサイトなどの作品を
+                                            <br />
+                                            対象としたコンテスト
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -193,10 +207,17 @@ export default function Profile() {
                                 <div className={styles.content}>
                                     JP Hacks　参加
                                     <br />
-                                    <small className={styles.link}>
-                                        学生が短期間で集中的にプロダクトを開発・発表し、イノベーションを生み出すことを目的とした、日本最大規模の
-                                        <br />
-                                        学生向けハックイベント
+                                    <small>
+                                        <a
+                                            href="https://jphacks.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            学生が短期間で集中的にプロダクトを開発・発表し、イノベーションを生み出すことを目的とした、日本最大規模の
+                                            <br />
+                                            学生向けハックイベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -206,8 +227,15 @@ export default function Profile() {
                                 <div className={styles.content}>
                                     Tech.Summer Camp　参加
                                     <br />
-                                    <small className={styles.link}>
-                                        「学生エンジニアが体験できる最高峰を提供する」をモットーに学生により運営されるハッカソンイベント
+                                    <small>
+                                        <a
+                                            href="https://tsc.nxtend.or.jp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            「学生エンジニアが体験できる最高峰を提供する」をモットーに開催されているハッカソンイベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -216,8 +244,15 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     Hack U　2回目 参加 <br />
-                                    <small className={styles.link}>
-                                        LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                    <small>
+                                        <a
+                                            href="https://hacku.yahoo.co.jp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -226,8 +261,15 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     若年者ものづくり競技大会　出場 <br />
-                                    <small className={styles.link}>
-                                        厚生労働省主催、20歳以下の若年者を対象とした技能競技大会
+                                    <small>
+                                        <a
+                                            href="https://www.javada.or.jp/jyakunen20/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            厚生労働省主催、20歳以下の若年者を対象とした技能競技大会
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -236,8 +278,15 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     技育Camp　入賞 <br />
-                                    <small className={styles.link}>
-                                        サポーターズ主催、学生エンジニアの成長支援を目的としたオンライン技術イベント
+                                    <small>
+                                        <a
+                                            href="https://geek.supporterz.jp/geekcamp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            サポーターズ主催、学生エンジニアの成長支援を目的としたオンライン技術イベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
@@ -246,8 +295,15 @@ export default function Profile() {
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
                                     Hack U　1回目 参加 <br />
-                                    <small className={styles.link}>
-                                        LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                    <small>
+                                        <a
+                                            href="https://hacku.yahoo.co.jp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.link}
+                                        >
+                                            LINEヤフー株式会社が主催する、日本最大級の学生向けハッカソンイベント
+                                        </a>
                                     </small>
                                 </div>
                             </li>
