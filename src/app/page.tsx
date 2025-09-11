@@ -11,23 +11,23 @@ export default function Home() {
             <div className="NoteBox">
                 <div className="Binding"></div>
                 <div className="Cover">
-                    <p className={`${Saint.className} SubTitle`}>Kawakami Ayaka's</p>{" "}
+                    <p className={`${Saint.className} SubTitle`}>Kawakami Ayaka's</p>
                     <div className="TitleBox">
                         <h1 className="Title">PORTFOLIO</h1>
                     </div>
+
                     <div className="BtnBox">
-                        <div className="Btn">
-                            <Link className="NextBtn" href="/profile">
-                                Next
-                            </Link>
+                        {/* ← 親を Link にして全体クリック可能に */}
+                        <Link href="/profile" className="Btn" aria-label="プロフィールへ進む">
+                            <span className="NextBtn">Next</span>
                             <Image
                                 className="RightArrow"
-                                src="/RightArrow.svg" // public/vercel.svg に置いた画像
-                                alt="RightArrow" // 代替テキスト（必須！）
+                                src="/RightArrow.svg" // public/RightArrow.svg に置く
+                                alt="" // 装飾アイコンなので空alt
                                 width={16}
                                 height={16}
                             />
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

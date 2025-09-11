@@ -1,0 +1,39 @@
+.skill {
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.label {
+    width: 90px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.bar {
+    flex: 1;
+    background: #fff;
+    border: 2px solid;
+    /* ←色はTSX側から上書き */
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    /* 初期は0 */
+    transition: width 0.6s ease;
+
+}
+
+.percent {
+    width: 50px;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #555;
+}

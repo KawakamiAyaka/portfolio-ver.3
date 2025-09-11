@@ -70,22 +70,22 @@
     border-radius: 30px;
 
     position: relative;
-    /* 擬似要素配置に必須 */
     overflow: hidden;
-    /* 擬似要素がはみ出さないように */
     color: #fff;
     z-index: 1;
+
+    text-decoration: none;
+    /* Link の下線を消す */
+    cursor: pointer;
+    /* クリック感 */
 }
 
 .Btn::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
+    /* top/left/width/height をまとめて指定 */
     background: #DE9F84;
-
     transform: scale(0, 1);
     /* 横方向にゼロ */
     transform-origin: left top;
@@ -97,7 +97,6 @@
 
 .Btn:hover {
     color: #fff;
-    /* テキストを白に */
 }
 
 .Btn:hover::after {
@@ -114,4 +113,10 @@
     /* z-index 制御のため */
     z-index: 2;
     /* 擬似要素より上に出す */
+}
+
+/* アイコンが擬似要素に隠れないように */
+.RightArrow {
+    position: relative;
+    z-index: 2;
 }

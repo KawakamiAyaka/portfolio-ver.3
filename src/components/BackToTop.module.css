@@ -1,0 +1,30 @@
+.backToTop {
+    font-family: inherit;
+    position: fixed;
+    bottom: 0;
+    /* 画面下に固定 */
+    left: 70px;
+    /* 左端から80pxの位置（調整可能） */
+
+    width: 150px;
+    height: 80px;
+    border-radius: 80px 80px 0 0;
+    /* 上だけ丸い半円 */
+    background: #DE9F84;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.4s ease;
+
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.backToTop:hover {
+    transform: scale(1.1);
+}
+
+.TopBtnText {
+    margin: 0;
+    font-size: 1rem;
+}
