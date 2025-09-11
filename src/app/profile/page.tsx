@@ -135,7 +135,7 @@ export default function Profile() {
                         <div className={styles.Achievement}>
                             <Image
                                 className={styles.wkwkAchievement}
-                                src="/wkwkAchievement.svg" // public/vercel.svg に置いた画像
+                                src="/WkwkAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="わくわく探検隊努力賞受賞" // 代替テキスト（必須！）
                                 width={170}
                                 height={177}
