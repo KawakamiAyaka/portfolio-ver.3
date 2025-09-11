@@ -1,0 +1,117 @@
+.NoteBox {
+    width: 90%;
+    height: 87vh;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.Binding {
+    width: 10%;
+    height: 100%;
+    background: #403A2F;
+}
+
+.Cover {
+    width: 90%;
+    height: 100%;
+    background: #B59B77;
+}
+
+.SubTitle {
+    font-size: 5rem;
+    line-height: 2rem;
+    color: #FFF68F;
+    transform: rotate(-10deg);
+    margin-left: 10%;
+}
+
+.TitleBox {
+    width: 60%;
+    height: 40%;
+    background: #fff;
+    color: #403A2F;
+    border: #403A2F 3px solid;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #403A2F;
+}
+
+.BtnBox {
+    width: 100%;
+    height: 31%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.Btn {
+    width: 200px;
+    height: 60px;
+    border: #fff solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+    border-radius: 30px;
+
+    position: relative;
+    /* 擬似要素配置に必須 */
+    overflow: hidden;
+    /* 擬似要素がはみ出さないように */
+    color: #fff;
+    z-index: 1;
+}
+
+.Btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DE9F84;
+
+    transform: scale(0, 1);
+    /* 横方向にゼロ */
+    transform-origin: left top;
+    /* 左から右に展開 */
+    transition: transform .3s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    /* 中のテキストより奥へ */
+}
+
+.Btn:hover {
+    color: #fff;
+    /* テキストを白に */
+}
+
+.Btn:hover::after {
+    transform: scale(1, 1);
+    /* 横いっぱいに広がる */
+}
+
+.NextBtn {
+    color: inherit;
+    /* 親(Btn)の色を継承 */
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+    /* z-index 制御のため */
+    z-index: 2;
+    /* 擬似要素より上に出す */
+}

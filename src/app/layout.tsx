@@ -1,9 +1,14 @@
-import { Noto_Sans_JP, Kiwi_Maru, Playwrite_IN } from "next/font/google";
+import { Kiwi_Maru, Mrs_Saint_Delafield } from "next/font/google";
 import "./globals.css";
 
 const kiwi = Kiwi_Maru({
     weight: ["400"],
     subsets: ["latin"],
+    display: "swap",
+});
+
+export const Saint = Mrs_Saint_Delafield({
+    weight: ["400"],
     display: "swap",
 });
 
