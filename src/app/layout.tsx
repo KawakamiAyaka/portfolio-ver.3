@@ -5,12 +5,13 @@ import "./globals.css";
 const kiwi = Kiwi_Maru({ weight: ["400"], subsets: ["latin"], display: "swap" });
 export const Saint = Mrs_Saint_Delafield({ weight: ["400"], subsets: ["latin"], display: "swap" });
 
-const SITE_URL = "https://kawakami-ayaka-portfolio.vercel.app"; // ←本番URLに
+// あなたの本番URL
+const SITE_URL = "https://kawakami-ayaka-portfolio.vercel.app";
 
 export const metadata: Metadata = {
-    metadataBase: new URL(SITE_URL), // 相対→絶対に
+    metadataBase: new URL(SITE_URL),
     title: "Kawakami Ayaka's Portfolio",
-    description: "川上采華のポートフォリオサイトです。",
+    description: "川上彩華のポートフォリオサイトです。", // 采→彩 に修正
     openGraph: {
         title: "Kawakami Ayaka's Portfolio",
         description: "作品紹介・プロフィールなど",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         siteName: "Kawakami Ayaka's Portfolio",
         images: [
             {
-                url: "/ogp.png", // public/ogp.png（1200×630 推奨）
+                url: `${SITE_URL}/ogp.png`, // ← 絶対URLに
                 width: 1200,
                 height: 630,
                 alt: "Kawakami Ayaka's Portfolio サムネイル",
