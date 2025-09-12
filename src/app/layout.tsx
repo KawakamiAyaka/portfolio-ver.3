@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     description: "川上采華のポートフォリオサイトです。",
     openGraph: {
         title: "Kawakami Ayaka's Portfolio",
-        description: "作品紹介・プロフィールなど",
         url: SITE_URL,
         siteName: "Kawakami Ayaka's Portfolio",
         images: [
