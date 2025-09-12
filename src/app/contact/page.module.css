@@ -1,0 +1,179 @@
+.NoteBox {
+    width: 95%;
+    background: #B59B77;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.NotePage {
+    width: 90%;
+    background: #fff;
+    z-index: 2;
+    margin: 10px 10px 0 auto;
+    padding: 50px 0;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.CONTACT {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.text {
+    margin: 30px 0;
+    text-align: center;
+    color: #403A2F;
+}
+
+.NoteBox {
+    width: 95%;
+    background: #B59B77;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.NotePage {
+    width: 90%;
+    background: #fff;
+    z-index: 2;
+    margin: 10px 10px 0 auto;
+    padding: 50px 0;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.CONTACT {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.text {
+    margin: 30px 0;
+    text-align: center;
+    color: #403A2F;
+}
+
+/* MEMO画像を基準にする */
+.MEMO {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+/* 横並び & MEMO中央に配置 */
+.MailBox {
+    position: absolute;
+    /* MEMO画像の上に重ねる */
+    top: 62%;
+    /* 上下中央 */
+    left: 54%;
+    /* 左右中央 */
+    transform: translate(-50%, -50%);
+    /* 中心に揃える */
+    display: flex;
+    align-items: center;
+    /* 垂直方向に揃える */
+    gap: 20px;
+    /* アドレスとボタンの間隔 */
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+/* .Box {
+    display: flex;
+} */
+
+.email {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #403A2F;
+    font-weight: bold;
+}
+
+.CopyMark {
+    width: 40px;
+    /* 正方形 */
+    height: 40px;
+    background: #e9e9e9 url("/copy-icon.svg") no-repeat center/60%;
+    /* 薄いグレーにアイコンを載せる */
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    /* 少し角丸（四角がいいなら消す） */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* .CopyMark:hover {
+    background-color: #d3d3d3;
+} */
+
+.CopyMark:active {
+    background-color: #666;
+    /* クリック時にさらに濃いグレー */
+}
+
+/* メールとボタンは横並び、通知の基準点にする */
+.Box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 通知（初期は非表示・Boxの真下にフロート） */
+.copiedToast {
+    position: absolute;
+    top: calc(100% + 10px);
+    /* 行の直下8px */
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    background: #fff;
+    color: #403A2F;
+    border: 1px solid #d9d9d9;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    /* クリック邪魔しない */
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+/* 表示時にふわっと出す */
+.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+.dashed {
+    width: 80%;
+    height: 1.5px;
+    margin: 30px auto;
+    background-image: radial-gradient(circle, #c7c7c7 4px, transparent 5px);
+    background-size: 16px 2px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.dashed {
+    width: 80%;
+    height: 1.5px;
+    margin: 30px auto;
+    background-image: radial-gradient(circle, #c7c7c7 4px, transparent 5px);
+    background-size: 16px 2px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
