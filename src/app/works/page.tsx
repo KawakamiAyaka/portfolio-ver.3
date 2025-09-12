@@ -23,7 +23,7 @@ export default function Profile() {
                                 src="/WkwkThumbnail.png" // public/vercel.svg に置いた画像
                                 alt="わくわく探検隊のサムネイル" // 代替テキスト（必須！）
                                 width={1090}
-                                height={500}
+                                height={450}
                             />
                             <p>移動が退屈だと感じる子供たちにわくわくを提供するゲームアプリ</p>
                             <Link href="/wkwktannkenntai" className={styles.MoreWork}>
