@@ -11,7 +11,7 @@ const SITE_URL = "https://kawakami-ayaka-portfolio.vercel.app";
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
     title: "Kawakami Ayaka's Portfolio",
-    description: "川上彩華のポートフォリオサイトです。", // 采→彩 に修正
+    description: "川上采華のポートフォリオサイトです。",
     openGraph: {
         title: "Kawakami Ayaka's Portfolio",
         description: "作品紹介・プロフィールなど",
