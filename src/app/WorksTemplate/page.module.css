@@ -1,0 +1,17 @@
+.NoteBox {
+    width: 95%;
+    background: #B59B77;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.NotePage {
+    width: 90%;
+    background: #fff;
+    z-index: 2;
+    margin: 10px 10px 0 auto;
+    padding: 50px 0;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}

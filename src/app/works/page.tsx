@@ -26,7 +26,7 @@ export default function Profile() {
                                 height={450}
                             />
                             <p>移動が退屈だと感じる子供たちにわくわくを提供するゲームアプリ</p>
-                            <Link href="/wkwktannkenntai" className={styles.MoreWork}>
+                            <Link href="/WorksTemplate" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
                         </div>
@@ -66,28 +66,9 @@ export default function Profile() {
                         <WorksThumbnail
                             image="SampleImage.svg"
                             type="Webサイト"
-                            title="レイタイム"
+                            title="FamilyConnect"
                         />
-                        <WorksThumbnail
-                            image="SampleImage.svg"
-                            type="Webサイト"
-                            title="レイタイム"
-                        />
-                        <WorksThumbnail
-                            image="SampleImage.svg"
-                            type="Webサイト"
-                            title="レイタイム"
-                        />
-                        <WorksThumbnail
-                            image="SampleImage.svg"
-                            type="Webサイト"
-                            title="レイタイム"
-                        />
-                        <WorksThumbnail
-                            image="SampleImage.svg"
-                            type="Webサイト"
-                            title="レイタイム"
-                        />
+                        <WorksThumbnail image="SampleImage.svg" type="Webサイト" title="Learnest" />
                     </div>
 
                     <Footer />
