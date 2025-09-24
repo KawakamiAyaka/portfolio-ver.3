@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
 import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
-import Works from "@/components/Works"; // 作ったコンポーネント
+import Works from "@/components/Works";
+import More from "@/components/More";
 
 import styles from "./page.module.css";
 
@@ -35,8 +36,14 @@ export default function WorksTemplate() {
                         websiteLink="https://example.com/wkwk"
                         image="/SampleImage.svg"
                         imageAlt="わくわく探検隊のサムネイル"
-                        note="この作品は学校展示用に制作したものです"
+                        note="この作品は現在公開されていません"
                     />
+                    <div className={styles.More}>
+                        <More
+                            title="制作背景"
+                            text="自由テーマのハッカソンで、子供たちが移動時間を楽しく過ごせるように工夫した作品を開発しました。"
+                        />
+                    </div>
                     <Footer />
                 </div>
             </div>
