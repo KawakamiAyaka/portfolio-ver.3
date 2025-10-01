@@ -22,3 +22,44 @@
     margin: 100px 0;
     padding: 100px 0;
 }
+
+.Wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Logo {
+    width: 50%;
+}
+
+.Color {
+    width: 50%;
+
+}
+
+.ColorPalletBox {
+    display: flex;
+    gap: 10%;
+}
+
+.MainColor {
+    width: 100px;
+    height: 100px;
+    background: #FFE162;
+    border-radius: 50%;
+}
+
+.SubColor {
+    width: 100px;
+    height: 100px;
+    background: #D65550;
+    border-radius: 50%;
+}
+
+.AccentColor {
+    width: 100px;
+    height: 100px;
+    background: #EEEEEE;
+    border-radius: 50%;
+}
