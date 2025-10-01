@@ -19,19 +19,6 @@ export default function Profile() {
                     <div className={styles.Pickup}>
                         <div className={styles.ThumbnailBox}>
                             <Image
-                                className={styles.WkwkThumbnail}
-                                src="/WkwkThumbnail.png" // public/vercel.svg に置いた画像
-                                alt="わくわく探検隊のサムネイル" // 代替テキスト（必須！）
-                                width={1090}
-                                height={450}
-                            />
-                            <p>移動が退屈だと感じる子供たちにわくわくを提供するゲームアプリ</p>
-                            <Link href="/WorksTemplate" className={styles.MoreWork}>
-                                この作品を見る
-                            </Link>
-                        </div>
-                        <div className={styles.ThumbnailBox}>
-                            <Image
                                 className={styles.HunterThumbnail}
                                 src="/HunterThumbnail.png" // public/vercel.svg に置いた画像
                                 alt="ものしりハンターのサムネイル" // 代替テキスト（必須！）
@@ -53,6 +40,19 @@ export default function Profile() {
                             />
                             <p>歩いた場所が自分の陣地に。陣取り型ライフログアプリ</p>
                             <Link href="/Rihlar" className={styles.MoreWork}>
+                                この作品を見る
+                            </Link>
+                        </div>
+                        <div className={styles.ThumbnailBox}>
+                            <Image
+                                className={styles.WkwkThumbnail}
+                                src="/WkwkThumbnail.png" // public/vercel.svg に置いた画像
+                                alt="わくわく探検隊のサムネイル" // 代替テキスト（必須！）
+                                width={1090}
+                                height={450}
+                            />
+                            <p>移動が退屈だと感じる子供たちにわくわくを提供するゲームアプリ</p>
+                            <Link href="/WorksTemplate" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
                         </div>
