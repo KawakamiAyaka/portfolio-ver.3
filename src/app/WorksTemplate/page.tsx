@@ -70,12 +70,31 @@ export default function WorksTemplate() {
                             <Heading text="COLOR" />
                             <div>
                                 <div className={styles.ColorPalletBox}>
-                                    <div className={styles.MainColor}></div>
-                                    <div className={styles.AccentColor}></div>
-                                    <div className={styles.BaseColor}></div>
+                                    <div>
+                                        <div className={styles.MainColor}></div>
+                                        <p className={styles.ColorCode}>#FFE162</p>
+                                    </div>
+                                    <div>
+                                        <div className={styles.AccentColor}></div>
+                                        <p className={styles.ColorCode}>#D65550</p>
+                                    </div>
+                                    <div>
+                                        <div className={styles.BaseColor}></div>
+                                        <p className={styles.ColorCode}>#EEEEEE</p>
+                                    </div>
+                                </div>
+                                <div className={styles.ColorText}>
+                                    <p className={styles.text}>
+                                        全体的にはっきりした彩度の高い色にすることで、画面にメリハリをつけわかりやすく見えるようにしました。
+                                        黄色は「楽しさ」、赤は「競争心」をイメージして選びました。
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <Heading text="Features" />
+                        <div></div>
                     </div>
                     <Footer />
                 </div>

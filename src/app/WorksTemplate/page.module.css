@@ -40,7 +40,9 @@
 
 .ColorPalletBox {
     display: flex;
-    gap: 10%;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 40px;
 }
 
 .MainColor {
@@ -48,6 +50,7 @@
     height: 100px;
     background: #FFE162;
     border-radius: 50%;
+    border: 1px solid #403A2F;
 }
 
 .BaseColor {
@@ -55,6 +58,7 @@
     height: 100px;
     background: #D65550;
     border-radius: 50%;
+    border: 1px solid #403A2F;
 }
 
 .AccentColor {
@@ -62,4 +66,17 @@
     height: 100px;
     background: #EEEEEE;
     border-radius: 50%;
+    border: 1px solid #403A2F;
+}
+
+.ColorCode {
+    text-align: center;
+}
+
+.ColorText {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 0.9rem;
+    color: #403A2F;
+    margin-top: 30px;
 }
