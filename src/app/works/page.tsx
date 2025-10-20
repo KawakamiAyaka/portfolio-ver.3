@@ -59,16 +59,21 @@ export default function Profile() {
                     </div>
                     <div className={styles.WorksBox}>
                         <WorksThumbnail
-                            image="SampleImage.svg"
+                            image="RaitimeThumbnail.svg"
                             type="Webサイト"
                             title="レイタイム"
                         />
+
                         <WorksThumbnail
-                            image="SampleImage.svg"
+                            image="FamilyConnectThumbnail.svg"
                             type="Webサイト"
                             title="FamilyConnect"
                         />
-                        <WorksThumbnail image="SampleImage.svg" type="Webサイト" title="Learnest" />
+                        <WorksThumbnail
+                            image="LearnestThumbnail.svg"
+                            type="Webサイト"
+                            title="Learnest"
+                        />
                     </div>
 
                     <Footer />
