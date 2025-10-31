@@ -142,7 +142,7 @@ export default function Profile() {
                                 width={170}
                                 height={177}
                             />
-                            <Link href="/wkwktannkenntai" className={styles.MoreWork}>
+                            <Link href="/Wkwk" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
                         </div>

@@ -52,7 +52,7 @@ export default function Profile() {
                                 height={450}
                             />
                             <p>移動が退屈だと感じる子供たちにわくわくを提供するゲームアプリ</p>
-                            <Link href="/WorksTemplate" className={styles.MoreWork}>
+                            <Link href="/Wkwk" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
                         </div>

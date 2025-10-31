@@ -1,0 +1,86 @@
+.NoteBox {
+    width: 95%;
+    background: #B59B77;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.NotePage {
+    width: 90%;
+    background: #fff;
+    z-index: 2;
+    margin: 10px 10px 0 auto;
+    padding: 50px 0;
+    box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+}
+
+.More {
+    width: 100%;
+    background: #F9F9F9;
+    margin: 100px 0 0 0;
+    padding: 100px 0;
+}
+
+.WkwkScreen {
+    width: 100%;
+}
+
+.Wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Logo {
+    width: 50%;
+}
+
+.Color {
+    width: 50%;
+
+}
+
+.ColorPalletBox {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 40px;
+}
+
+.MainColor {
+    width: 100px;
+    height: 100px;
+    background: #FFE162;
+    border-radius: 50%;
+    border: 1px solid #403A2F;
+}
+
+.BaseColor {
+    width: 100px;
+    height: 100px;
+    background: #D65550;
+    border-radius: 50%;
+    border: 1px solid #403A2F;
+}
+
+.AccentColor {
+    width: 100px;
+    height: 100px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    border: 1px solid #403A2F;
+}
+
+.ColorCode {
+    text-align: center;
+}
+
+.ColorText {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 0.9rem;
+    color: #403A2F;
+    margin-top: 30px;
+}
