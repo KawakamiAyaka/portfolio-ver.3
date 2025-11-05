@@ -91,6 +91,11 @@
     /* 横いっぱいに広がる */
 }
 
+.WkwkThumbnail {
+    width: 600px;
+    height: 500px;
+}
+
 .Note {
     margin-top: 2px;
     font-size: 0.8rem;

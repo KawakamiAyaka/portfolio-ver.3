@@ -36,7 +36,7 @@ export default function WorksTemplate() {
                         tools="ツール：Figma / Illustrator"
                         designLink="https://www.figma.com/..."
                         websiteLink="https://example.com/wkwk"
-                        image="/SampleImage.svg"
+                        image="/Hunter.png"
                         imageAlt="わくわく探検隊のサムネイル"
                         note="この作品は現在公開されていません"
                     />
