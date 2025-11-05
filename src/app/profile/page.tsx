@@ -112,10 +112,23 @@ export default function Profile() {
                     <div className={styles.AchievementBox}>
                         <div className={styles.Achievement}>
                             <Image
+                                className={styles.FamAchievement}
+                                src="/RihlarAchievement.svg" // public/vercel.svg に置いた画像
+                                alt="Rihlar銅賞受賞" // 代替テキスト（必須！）
+                                width={160}
+                                height={177}
+                            />
+                            <Link href="/Rihlar" className={styles.MoreWork}>
+                                この作品を見る
+                            </Link>
+                        </div>
+
+                        <div className={styles.Achievement}>
+                            <Image
                                 className={styles.HunterAchievement}
                                 src="/HunterAchievement2.svg" // public/vercel.svg に置いた画像
                                 alt="ものしりハンター敢闘賞受賞" // 代替テキスト（必須！）
-                                width={170}
+                                width={160}
                                 height={177}
                             />
                             <Link href="/Hunter" className={styles.MoreWork}>
@@ -127,7 +140,7 @@ export default function Profile() {
                                 className={styles.HunterAchievement}
                                 src="/HunterAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="ものしりハンターアイデア賞受賞" // 代替テキスト（必須！）
-                                width={170}
+                                width={160}
                                 height={177}
                             />
                             <Link href="/Hunter" className={styles.MoreWork}>
@@ -139,7 +152,7 @@ export default function Profile() {
                                 className={styles.wkwkAchievement}
                                 src="/WkwkAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="わくわく探検隊努力賞受賞" // 代替テキスト（必須！）
-                                width={170}
+                                width={160}
                                 height={177}
                             />
                             <Link href="/Wkwk" className={styles.MoreWork}>
@@ -151,7 +164,7 @@ export default function Profile() {
                                 className={styles.FamAchievement}
                                 src="/FamAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="FamilyConnect新人賞受賞" // 代替テキスト（必須！）
-                                width={170}
+                                width={160}
                                 height={177}
                             />
                             <Link href="/FamilyConnect" className={styles.MoreWork}>
@@ -162,9 +175,17 @@ export default function Profile() {
                     <div className={styles.HistoryBox}>
                         <ul className={styles.timeline}>
                             <li className={styles.item}>
+                                <div className={styles.time}>2025年9月</div>
+                                <div className={styles.line}></div>
+                                <div className={styles.content}>学内展示会 +E展（3年前期）銅賞</div>
+                            </li>
+
+                            <li className={styles.item}>
                                 <div className={styles.time}>2025年3月</div>
                                 <div className={styles.line}></div>
-                                <div className={styles.content}>学内展示会 +E展（2年後期）入賞</div>
+                                <div className={styles.content}>
+                                    学内展示会 +E展（2年後期）敢闘賞
+                                </div>
                             </li>
 
                             <li className={styles.item}>
@@ -188,7 +209,7 @@ export default function Profile() {
                                 <div className={styles.time}>2025年1月</div>
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
-                                    専門学校HTML5作品アワード　入賞 <br />
+                                    専門学校HTML5作品アワード　アイデア賞受賞 <br />
                                     <small>
                                         <a
                                             href="https://html5award.com//"
@@ -279,7 +300,7 @@ export default function Profile() {
                                 <div className={styles.time}>2024年6月</div>
                                 <div className={styles.line}></div>
                                 <div className={styles.content}>
-                                    技育Camp　入賞 <br />
+                                    技育Camp　努力賞 <br />
                                     <small>
                                         <a
                                             href="https://geek.supporterz.jp/geekcamp/"
@@ -312,7 +333,9 @@ export default function Profile() {
                             <li className={styles.item}>
                                 <div className={styles.time}>2024年3月</div>
                                 <div className={styles.line}></div>
-                                <div className={styles.content}>学内展示会 +E展（1年後期）入賞</div>
+                                <div className={styles.content}>
+                                    学内展示会 +E展（1年後期）新人賞
+                                </div>
                             </li>
                         </ul>
                     </div>
