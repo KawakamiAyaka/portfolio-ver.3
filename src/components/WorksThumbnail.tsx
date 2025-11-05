@@ -7,12 +7,13 @@ type Props = {
     image: string;
     type: string;
     title: string;
+    href: string; // ← ここを追加
 };
 
-export default function WorksThumbnail({ image, type, title }: Props) {
+export default function WorksThumbnail({ image, type, title, href }: Props) {
     return (
         <div className={styles.WorksBox}>
-            <Link href="/Rihlar">
+            <Link href={href}>
                 <Image
                     className={styles.WorksThumbnail}
                     src={image.startsWith("/") ? image : `/${image}`}

@@ -62,17 +62,20 @@ export default function Profile() {
                             image="RaitimeThumbnail.svg"
                             type="Webサイト"
                             title="レイタイム"
+                            href="/Reitime"
                         />
 
                         <WorksThumbnail
                             image="FamilyConnectThumbnail.svg"
                             type="Webサイト"
                             title="FamilyConnect"
+                            href="/FamilyConnect"
                         />
                         <WorksThumbnail
                             image="LearnestThumbnail.svg"
                             type="Webサイト"
                             title="Learnest"
+                            href="/Learnest"
                         />
                     </div>
 
