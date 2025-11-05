@@ -30,7 +30,7 @@ export default function WorksTemplate() {
                     {/* // デザイン + Webサイト */}
                     <Works
                         type="アプリケーション"
-                        title="わくわく探検隊"
+                        title="Rihlar（リフラル）"
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
