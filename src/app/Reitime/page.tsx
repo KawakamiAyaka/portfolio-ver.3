@@ -29,33 +29,32 @@ export default function WorksTemplate() {
                     /> */}
                     {/* // デザイン + Webサイト */}
                     <Works
-                        type="アプリケーション"
-                        title="わくわく探検隊"
+                        type="Webサイト"
+                        title="レイタイム"
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
-                        tools="ツール：Figma / Illustrator"
+                        tools="ツール：Figma"
                         designLink="https://www.figma.com/..."
                         websiteLink="https://example.com/wkwk"
-                        image="/Wkwk.png"
-                        imageAlt="わくわく探検隊のサムネイル"
-                        note="この作品は現在公開されていません"
+                        image="/Reitime.png"
+                        imageAlt="レイタイムのサムネイル"
                     />
                     <div className={styles.More}>
                         <More
                             title="概要"
-                            text="目的地までの道のりが退屈だと感じる子どもたちに、「探索」「競争」「収集」の楽しさを提供するアプリ。"
+                            text="電車遅延時にリアルタイムで振替案や到着予測を提示し、ユーザーの時間を最適化する交通支援アプリ。"
                         />
                         <More
                             title="ターゲット/ゴール"
-                            text="スマホを持って一人で出かけられる年頃の子どもが、ゲーム感覚で目的地まで楽しく行動し、遅刻せずに移動できることを目指す。"
+                            text="通勤・通学などで電車を日常的に利用する人が、遅延に迅速に対応しスケジュールの狂いを最小限に抑えることを目指す。"
                         />
                         <More
                             title="制作背景"
-                            text="自由テーマのもと、「子どもが日常の移動をもっと楽しめる体験を作りたい」という思いから企画。"
+                            text="電車遅延による計画の乱れや情報不足に着目し、正確な情報提供でストレスを軽減したいという課題意識から発案。"
                         />
                         <More
                             title="制作期間"
-                            text="約6か月（企画構想・プロトタイプ制作を含む）そのうちデザイン設計期間：約1か月"
+                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約2か月"
                         />
                     </div>
                     <Image

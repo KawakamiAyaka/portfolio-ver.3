@@ -29,33 +29,32 @@ export default function WorksTemplate() {
                     /> */}
                     {/* // デザイン + Webサイト */}
                     <Works
-                        type="アプリケーション"
-                        title="わくわく探検隊"
-                        tags={["チーム制作"]}
-                        position="担当：企画 / デザイン"
-                        tools="ツール：Figma / Illustrator"
+                        type="Webサイト"
+                        title="Learnest"
+                        tags={["個人制作"]}
+                        position="担当：企画 / デザイン / コーディング"
+                        tools="ツール：Figma / Illustrator / VSCode"
                         designLink="https://www.figma.com/..."
                         websiteLink="https://example.com/wkwk"
-                        image="/Wkwk.png"
-                        imageAlt="わくわく探検隊のサムネイル"
-                        note="この作品は現在公開されていません"
+                        image="/learnest.png"
+                        imageAlt="Learnestのサムネイル"
                     />
                     <div className={styles.More}>
                         <More
                             title="概要"
-                            text="目的地までの道のりが退屈だと感じる子どもたちに、「探索」「競争」「収集」の楽しさを提供するアプリ。"
+                            text="デザインを学びたい人同士が作品投稿とフィードバックを通じて成長できる学習支援プラットフォーム。"
                         />
                         <More
                             title="ターゲット/ゴール"
-                            text="スマホを持って一人で出かけられる年頃の子どもが、ゲーム感覚で目的地まで楽しく行動し、遅刻せずに移動できることを目指す。"
+                            text="デザインを勉強中の学生や初心者が、互いに刺激し合いながらスキルを効率的に向上させることを目指す。"
                         />
                         <More
                             title="制作背景"
-                            text="自由テーマのもと、「子どもが日常の移動をもっと楽しめる体験を作りたい」という思いから企画。"
+                            text="デザインの学習方法や評価の機会が少ないという課題に対し、学びと発信を両立できる環境を提供したいという思いから企画。"
                         />
                         <More
                             title="制作期間"
-                            text="約6か月（企画構想・プロトタイプ制作を含む）そのうちデザイン設計期間：約1か月"
+                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月半"
                         />
                     </div>
                     <Image

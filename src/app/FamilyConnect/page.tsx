@@ -29,33 +29,32 @@ export default function WorksTemplate() {
                     /> */}
                     {/* // デザイン + Webサイト */}
                     <Works
-                        type="アプリケーション"
-                        title="わくわく探検隊"
-                        tags={["チーム制作"]}
-                        position="担当：企画 / デザイン"
-                        tools="ツール：Figma / Illustrator"
+                        type="Webサイト"
+                        title="FamilyConnect"
+                        tags={["個人制作"]}
+                        position="担当：企画 / デザイン / コーディング"
+                        tools="ツール：Figma / Illustrator / VSCode"
                         designLink="https://www.figma.com/..."
                         websiteLink="https://example.com/wkwk"
-                        image="/SampleImage.svg"
+                        image="/Fam.png"
                         imageAlt="わくわく探検隊のサムネイル"
-                        note="この作品は現在公開されていません"
                     />
                     <div className={styles.More}>
                         <More
-                            title="制作背景"
-                            text="自由テーマのハッカソンで、子供たちが移動時間を楽しく過ごせるように工夫した作品を開発しました。"
+                            title="概要"
+                            text="家族間の情報共有をスムーズにし、絆を深めるためのコミュニケーション支援アプリ。"
+                        />
+                        <More
+                            title="ターゲット/ゴール"
+                            text="忙しさや生活スタイルの違いで会話が減った家族が、簡単に連絡や予定を共有できる環境をつくる。"
                         />
                         <More
                             title="制作背景"
-                            text="自由テーマのハッカソンで、子供たちが移動時間を楽しく過ごせるように工夫した作品を開発しました。"
+                            text="現代の家庭で増える「会話の減少」「すれ違い」を解消し、家族のつながりを取り戻したいという思いから企画。"
                         />
                         <More
-                            title="制作背景"
-                            text="自由テーマのハッカソンで、子供たちが移動時間を楽しく過ごせるように工夫した作品を開発しました。"
-                        />
-                        <More
-                            title="制作背景"
-                            text="自由テーマのハッカソンで、子供たちが移動時間を楽しく過ごせるように工夫した作品を開発しました。"
+                            title="制作期間"
+                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月半"
                         />
                     </div>
                     <Image

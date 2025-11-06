@@ -55,7 +55,7 @@ export default function WorksTemplate() {
                         />
                         <More
                             title="制作期間"
-                            text="約6か月（企画構想・プロトタイプ制作を含む）そのうちデザイン設計期間：約1か月"
+                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月"
                         />
                     </div>
                     <Image

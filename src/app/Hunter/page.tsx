@@ -29,7 +29,7 @@ export default function WorksTemplate() {
                     /> */}
                     {/* // デザイン + Webサイト */}
                     <Works
-                        type="アプリケーション"
+                        type="Webサイト"
                         title="ものしりハンター"
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
@@ -37,7 +37,7 @@ export default function WorksTemplate() {
                         designLink="https://www.figma.com/..."
                         websiteLink="https://example.com/wkwk"
                         image="/Hunter.png"
-                        imageAlt="わくわく探検隊のサムネイル"
+                        imageAlt="ものしりハンターのサムネイル"
                         note="この作品は現在公開されていません"
                     />
                     <div className={styles.More}>
@@ -55,12 +55,12 @@ export default function WorksTemplate() {
                         />
                         <More
                             title="制作期間"
-                            text="約6か月（企画構想・開発を含む）そのうちデザイン設計期間：約1か月"
+                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月"
                         />
                     </div>
                     <Image
                         className={styles.WkwkScreen}
-                        src="/WkwkScreen.svg"
+                        src="/HunterScreen.svg"
                         alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
                         width={1500}
                         height={660}
