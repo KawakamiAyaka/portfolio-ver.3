@@ -7,6 +7,7 @@ import More from "@/components/More";
 import Logo from "@/components/Logo";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { features } from "process";
 
 export default function WorksTemplate() {
     return (
@@ -61,9 +62,9 @@ export default function WorksTemplate() {
                     <Image
                         className={styles.WkwkScreen}
                         src="/HunterScreen.svg"
-                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
-                        width={1500}
-                        height={660}
+                        alt="ものしりハンタースクリーンショット集" // 代替テキスト（必須！）
+                        width={1000}
+                        height={500}
                     />
 
                     <div className={styles.Color}>
@@ -96,7 +97,19 @@ export default function WorksTemplate() {
                     </div>
                     <div>
                         <Heading text="FEATURES" />
-                        <div></div>
+                        <div className={styles.Features}>
+                            <div className={styles.FeaturesBox}>
+                                <div>
+                                    <Image
+                                        className={styles.WkwkScreen}
+                                        src="/HunterScreen.svg"
+                                        alt="ものしりハンタースクリーンショット集" // 代替テキスト（必須！）
+                                        width={1000}
+                                        height={500}
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <Footer />
                 </div>

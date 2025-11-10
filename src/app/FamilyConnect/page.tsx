@@ -60,9 +60,9 @@ export default function WorksTemplate() {
                     <Image
                         className={styles.WkwkScreen}
                         src="/FamScreen.svg"
-                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
-                        width={1500}
-                        height={660}
+                        alt="FamilyConnectスクリーンショット集" // 代替テキスト（必須！）
+                        width={1000}
+                        height={500}
                     />
                     <div className={styles.Color}>
                         <Heading text="COLOR" />

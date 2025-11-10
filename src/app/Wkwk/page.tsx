@@ -62,8 +62,8 @@ export default function WorksTemplate() {
                         className={styles.WkwkScreen}
                         src="/WkwkScreen.svg"
                         alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
-                        width={1500}
-                        height={660}
+                        width={1000}
+                        height={500}
                     />
                     <div className={styles.Color}>
                         <Heading text="COLOR" />
