@@ -65,43 +65,37 @@ export default function WorksTemplate() {
                         width={1500}
                         height={660}
                     />
-                    <div className={styles.Wrap}>
-                        <div className={styles.Logo}>
-                            <Heading text="LOGO" />
-                            <Logo
-                                text="ここにロゴに込めた思い"
-                                image="/LogoSample.svg"
-                                imageAlt="わくわく探検隊のロゴ"
-                            />
-                        </div>
-                        <div className={styles.Color}>
-                            <Heading text="COLOR" />
-                            <div>
-                                <div className={styles.ColorPalletBox}>
-                                    <div>
-                                        <div className={styles.MainColor}></div>
-                                        <p className={styles.ColorCode}>#FFE162</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.AccentColor}></div>
-                                        <p className={styles.ColorCode}>#D65550</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.BaseColor}></div>
-                                        <p className={styles.ColorCode}>#EEEEEE</p>
-                                    </div>
+
+                    <div className={styles.Color}>
+                        <Heading text="COLOR" />
+                        <div>
+                            <div className={styles.ColorPalletBox}>
+                                <div>
+                                    <div className={styles.MainColor}></div>
+                                    <p className={styles.ColorCode}>#FF7530</p>
                                 </div>
-                                <div className={styles.ColorText}>
-                                    <p className={styles.text}>
-                                        全体的にはっきりした彩度の高い色にすることで、画面にメリハリをつけわかりやすく見えるようにしました。
-                                        黄色は「楽しさ」、赤は「競争心」をイメージして選びました。
-                                    </p>
+                                <div>
+                                    <div className={styles.AccentColor}></div>
+                                    <p className={styles.ColorCode}>#FFE681</p>
                                 </div>
+                                <div>
+                                    <div className={styles.BaseColor}></div>
+                                    <p className={styles.ColorCode}>#FFFAE6</p>
+                                </div>
+                            </div>
+                            <div className={styles.ColorText}>
+                                <p className={styles.text}>
+                                    黄色を中心に、見る人が
+                                    <span className={styles.Main}>元気や温かさ</span>
+                                    を感じられるような配色を意識しました。明度と彩度のコントラストで、画面全体に
+                                    <span className={styles.Accent}>活気 とまとまり</span>
+                                    を生み出しています。
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <Heading text="Features" />
+                        <Heading text="FEATURES" />
                         <div></div>
                     </div>
                     <Footer />

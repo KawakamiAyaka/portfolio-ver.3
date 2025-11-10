@@ -60,48 +60,42 @@ export default function WorksTemplate() {
                     </div>
                     <Image
                         className={styles.WkwkScreen}
-                        src="/WkwkScreen.svg"
+                        src="/RihlarScreen.png"
                         alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
                         width={1500}
                         height={660}
                     />
-                    <div className={styles.Wrap}>
-                        <div className={styles.Logo}>
-                            <Heading text="LOGO" />
-                            <Logo
-                                text="ここにロゴに込めた思い"
-                                image="/LogoSample.svg"
-                                imageAlt="わくわく探検隊のロゴ"
-                            />
-                        </div>
-                        <div className={styles.Color}>
-                            <Heading text="COLOR" />
-                            <div>
-                                <div className={styles.ColorPalletBox}>
-                                    <div>
-                                        <div className={styles.MainColor}></div>
-                                        <p className={styles.ColorCode}>#FFE162</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.AccentColor}></div>
-                                        <p className={styles.ColorCode}>#D65550</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.BaseColor}></div>
-                                        <p className={styles.ColorCode}>#EEEEEE</p>
-                                    </div>
+                    <div className={styles.Color}>
+                        <Heading text="COLOR" />
+                        <div>
+                            <div className={styles.ColorPalletBox}>
+                                <div>
+                                    <div className={styles.MainColor}></div>
+                                    <p className={styles.ColorCode}>#98BA87</p>
                                 </div>
-                                <div className={styles.ColorText}>
-                                    <p className={styles.text}>
-                                        全体的にはっきりした彩度の高い色にすることで、画面にメリハリをつけわかりやすく見えるようにしました。
-                                        黄色は「楽しさ」、赤は「競争心」をイメージして選びました。
-                                    </p>
+                                <div>
+                                    <div className={styles.AccentColor}></div>
+                                    <p className={styles.ColorCode}>#A8EAF0</p>
                                 </div>
+                                <div>
+                                    <div className={styles.BaseColor}></div>
+                                    <p className={styles.ColorCode}>#EBEDE1</p>
+                                </div>
+                            </div>
+                            <div className={styles.ColorText}>
+                                <p className={styles.text}>
+                                    歩くことを楽しく促す体験に合わせて、
+                                    <span className={styles.Main}>自然を感じる</span>
+                                    <span className={styles.Accent}>アースカラー</span>
+                                    を採用しました。Googleマップのトーンと調和するよう彩度を調整し、画面全体に
+                                    <span className={styles.Base}>落ち着きと統一感</span>
+                                    を持たせています。
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <Heading text="Features" />
+                        <Heading text="FEATURES" />
                         <div></div>
                     </div>
                     <Footer />

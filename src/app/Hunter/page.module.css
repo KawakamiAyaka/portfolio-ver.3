@@ -27,21 +27,6 @@
     width: 100%;
 }
 
-.Wrap {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.Logo {
-    width: 50%;
-}
-
-.Color {
-    width: 50%;
-
-}
-
 .ColorPalletBox {
     display: flex;
     justify-content: center;
@@ -50,27 +35,27 @@
 }
 
 .MainColor {
-    width: 100px;
-    height: 100px;
-    background: #FFE162;
-    border-radius: 50%;
-    border: 1px solid #403A2F;
+    width: 120px;
+    height: 120px;
+    background: #FF7530;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
 .BaseColor {
-    width: 100px;
-    height: 100px;
-    background: #D65550;
-    border-radius: 50%;
-    border: 1px solid #403A2F;
+    width: 120px;
+    height: 120px;
+    background: #FFFAE6;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
 .AccentColor {
-    width: 100px;
-    height: 100px;
-    background: #EEEEEE;
-    border-radius: 50%;
-    border: 1px solid #403A2F;
+    width: 120px;
+    height: 120px;
+    background: #FFE681;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
 .ColorCode {
@@ -79,8 +64,16 @@
 
 .ColorText {
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     font-size: 0.9rem;
     color: #403A2F;
     margin-top: 30px;
+}
+
+.Main {
+    color: #e4cc6a;
+}
+
+.Accent {
+    color: #FF7530;
 }

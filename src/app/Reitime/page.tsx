@@ -59,48 +59,46 @@ export default function WorksTemplate() {
                     </div>
                     <Image
                         className={styles.WkwkScreen}
-                        src="/WkwkScreen.svg"
-                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
-                        width={1500}
-                        height={660}
+                        src="/RaitimeScreen.svg"
+                        alt="レイタイムスクリーンショット集" // 代替テキスト（必須！）
+                        width={1000}
+                        height={500}
                     />
                     <div className={styles.Wrap}>
-                        <div className={styles.Logo}>
-                            <Heading text="LOGO" />
-                            <Logo
-                                text="ここにロゴに込めた思い"
-                                image="/LogoSample.svg"
-                                imageAlt="わくわく探検隊のロゴ"
-                            />
-                        </div>
                         <div className={styles.Color}>
                             <Heading text="COLOR" />
                             <div>
                                 <div className={styles.ColorPalletBox}>
                                     <div>
                                         <div className={styles.MainColor}></div>
-                                        <p className={styles.ColorCode}>#FFE162</p>
+                                        <p className={styles.ColorCode}>#46A667</p>
                                     </div>
                                     <div>
                                         <div className={styles.AccentColor}></div>
-                                        <p className={styles.ColorCode}>#D65550</p>
+                                        <p className={styles.ColorCode}>#F6AF39</p>
                                     </div>
                                     <div>
                                         <div className={styles.BaseColor}></div>
-                                        <p className={styles.ColorCode}>#EEEEEE</p>
+                                        <p className={styles.ColorCode}>#EDEDED</p>
                                     </div>
                                 </div>
                                 <div className={styles.ColorText}>
                                     <p className={styles.text}>
-                                        全体的にはっきりした彩度の高い色にすることで、画面にメリハリをつけわかりやすく見えるようにしました。
-                                        黄色は「楽しさ」、赤は「競争心」をイメージして選びました。
+                                        <span className={styles.Main}>
+                                            緑や灰色を機械的な印象を与える色
+                                        </span>
+                                        として採用し、電車のシステム的な正確さや無機質さを表現しました。
+                                        <span className={styles.Accent}>
+                                            落ち着いた深みのあるトーン
+                                        </span>
+                                        で、朝の空気に馴染む静かな雰囲気を演出しています。
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <Heading text="Features" />
+                        <Heading text="FEATURES" />
                         <div></div>
                     </div>
                     <Footer />
