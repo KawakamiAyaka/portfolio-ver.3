@@ -61,7 +61,7 @@ export default function WorksTemplate() {
                     <Image
                         className={styles.WkwkScreen}
                         src="/RihlarScreen.png"
-                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
+                        alt="わくわく探検隊スクリーンショット集"
                         width={1000}
                         height={500}
                     />
@@ -107,31 +107,27 @@ export default function WorksTemplate() {
                                 />
                                 <div className={styles.TextBox}>
                                     <h2 className={styles.Head}>
-                                        知的好奇心を刺激するものしり機能
+                                        現実世界を舞台にした陣取りゲーム
                                     </h2>
                                     <p className={styles.Text}>
-                                        カメラで物体を撮影すると、ChatGPT APIを活用して
+                                        GPSで訪れた場所が自分の陣地になるゲーム。
                                         <br />
-                                        「名前」と「説明」がひらがなで表示される機能。
+                                        日々の移動を“ゲームの進行”に変えることで、健康に楽しく続けられる仕組みです。
                                         <br />
-                                        子どもが身近なものに興味を持ち、学びにつながる体験を目指しました。
-                                        <br />
-                                        子どもに馴染む世界観と直感的な操作性を両立できるように意識しました。
+                                        マップ中心の画面構成で、情報量を最小限に整理しました。
                                     </p>
                                 </div>
                             </div>
 
                             <div className={styles.FeaturesBox}>
                                 <div className={styles.TextBox}>
-                                    <h2 className={styles.HeadRight}>
-                                        カード型ひらがな並べ替えミニゲーム
-                                    </h2>
+                                    <h2 className={styles.HeadRight}>続けたくなる仕組み</h2>
                                     <p className={styles.TextRight}>
-                                        撮影した物体の名前をひらがなに分解し、正しい順番に並べるゲーム。
+                                        達成感を刺激する実績システムを搭載。
                                         <br />
-                                        遊びながら自然にひらがなや単語を覚えられるよう設計しました。
+                                        集めた実績が、自分だけの冒険の記録になります。
                                         <br />
-                                        何度でも挑戦できるため繰り返し遊ぶ中で少しずつ上達できる仕組みです。
+                                        出先で撮った写真が陣地を強化し、日々の歩きを思い出として残せます。
                                     </p>
                                 </div>
                                 <Image
@@ -147,19 +143,17 @@ export default function WorksTemplate() {
                                 <Image
                                     className={styles.HunterMock}
                                     src="/RihlarMock3.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
+                                    alt="ものしり機能説明用モックアップ"
                                     width={400}
                                     height={400}
                                 />
                                 <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>知識を集める図鑑機能</h2>
+                                    <h2 className={styles.Head}>もっと面白くなる戦略性</h2>
                                     <p className={styles.Text}>
-                                        これまでに知った物体の名前を自分だけの「知識の本」として
+                                        プレイを重ねることで、盤面を変えるアイテムを獲得。
                                         <br />
-                                        収集・閲覧できる図鑑機能。
-                                        <br />
-                                        現実と乖離しない柔らかな装飾と色合いで、プレイ中の世界観を自然に引き継ぐようにデザインしました。
-                                        「学ぶ」体験を、子どもにとって身近で温かみのある遊びとして感じられるようにしています。
+                                        続けるほど強くなる成長感を演出しました。
+                                        シンプルなアイコンと少しのユーモアで、地図上でも個性が際立つデザインにしました。{" "}
                                     </p>
                                 </div>
                             </div>

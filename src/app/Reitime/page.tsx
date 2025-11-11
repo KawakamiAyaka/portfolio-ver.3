@@ -7,6 +7,7 @@ import More from "@/components/More";
 import Logo from "@/components/Logo";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WorksTemplate() {
     return (
@@ -15,19 +16,7 @@ export default function WorksTemplate() {
             <div className={styles.NoteBox}>
                 <div className={styles.NotePage}>
                     <BackToTop />
-                    {/* // デザインのみ */}
-                    {/* <Works
-                        type="アプリケーション"
-                        title="わくわく探検隊"
-                        tags={["チーム制作"]}
-                        position="担当：企画 / デザイン"
-                        tools="ツール：Figma / Illustrator"
-                        designLink="https://www.figma.com/..."
-                        image="/SampleImage.svg"
-                        imageAlt="わくわく探検隊のサムネイル"
-                        note="この作品は現在非公開のためデザインファイルのみ"
-                    /> */}
-                    {/* // デザイン + Webサイト */}
+                    {/* デザイン + Webサイト */}
                     <Works
                         type="Webサイト"
                         title="レイタイム"
@@ -60,47 +49,98 @@ export default function WorksTemplate() {
                     <Image
                         className={styles.WkwkScreen}
                         src="/RaitimeScreen.svg"
-                        alt="レイタイムスクリーンショット集" // 代替テキスト（必須！）
+                        alt="レイタイムスクリーンショット集"
                         width={1000}
                         height={500}
                     />
-                    <div className={styles.Wrap}>
-                        <div className={styles.Color}>
-                            <Heading text="COLOR" />
+                    {/* COLORセクション */}
+                    <div className={styles.Color}>
+                        <Heading text="COLOR" />
+                        <div className={styles.ColorPalletBox}>
                             <div>
-                                <div className={styles.ColorPalletBox}>
-                                    <div>
-                                        <div className={styles.MainColor}></div>
-                                        <p className={styles.ColorCode}>#46A667</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.AccentColor}></div>
-                                        <p className={styles.ColorCode}>#F6AF39</p>
-                                    </div>
-                                    <div>
-                                        <div className={styles.BaseColor}></div>
-                                        <p className={styles.ColorCode}>#EDEDED</p>
-                                    </div>
-                                </div>
-                                <div className={styles.ColorText}>
-                                    <p className={styles.text}>
-                                        <span className={styles.Main}>
-                                            緑や灰色を機械的な印象を与える色
-                                        </span>
-                                        として採用し、電車のシステム的な正確さや無機質さを表現しました。
-                                        <span className={styles.Accent}>
-                                            落ち着いた深みのあるトーン
-                                        </span>
-                                        で、朝の空気に馴染む静かな雰囲気を演出しています。
-                                    </p>
-                                </div>
+                                <div className={styles.MainColor}></div>
+                                <p className={styles.ColorCode}>#46A667</p>
+                            </div>
+                            <div>
+                                <div className={styles.AccentColor}></div>
+                                <p className={styles.ColorCode}>#F6AF39</p>
+                            </div>
+                            <div>
+                                <div className={styles.BaseColor}></div>
+                                <p className={styles.ColorCode}>#EDEDED</p>
+                            </div>
+                        </div>
+
+                        <div className={styles.ColorText}>
+                            <p className={styles.text}>
+                                駅や車内などさまざまなシーンで見やすいよう、
+                                <span className={styles.Main}>緑を基調</span>とし、
+                                信号機のように直感的に情報を識別できる
+                                <span className={styles.Accent}>アクセントカラー</span>を採用。
+                                全体に柔らかいグレーで安心感をもたせています。
+                            </p>
+                        </div>
+                    </div>
+                    <Heading text="FEATURES" />
+
+                    <div className={styles.Features}>
+                        <div className={styles.FeaturesBox}>
+                            <Image
+                                className={styles.HunterMock1}
+                                src="/RaitimeMock1.svg"
+                                alt="レイタイム機能モックアップ"
+                                width={400}
+                                height={400}
+                            />
+                            <div className={styles.TextBox}>
+                                <h2 className={styles.Head}>リアルタイム振替ルート提案</h2>
+                                <p className={styles.Text}>
+                                    遅延や運休を自動検知し、目的地までの最適ルートを瞬時に提示。
+                                    <br />
+                                    到着予測時間や乗り換え情報も視覚的にわかりやすく表示します。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.FeaturesBox}>
+                            <div className={styles.TextBox}>
+                                <h2 className={styles.HeadRight}>混雑・到着予測の可視化</h2>
+                                <p className={styles.TextRight}>
+                                    AI予測データをもとに、電車の混雑度や到着時刻を自動で更新。
+                                    <br />
+                                    通勤ストレスを軽減し、利用者が先回りして行動できるよう支援します。
+                                </p>
+                            </div>
+                            <Image
+                                className={styles.HunterMock}
+                                src="/RaitimeMock2.svg"
+                                alt="レイタイム機能モックアップ"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+
+                        <div className={styles.FeaturesBox}>
+                            <Image
+                                className={styles.HunterMock}
+                                src="/RaitimeMock3.svg"
+                                alt="レイタイム機能モックアップ"
+                                width={400}
+                                height={400}
+                            />
+                            <div className={styles.TextBox}>
+                                <h2 className={styles.Head}>時間を見える化するタイムライン</h2>
+                                <p className={styles.Text}>
+                                    通勤ルート上の出来事や到着予定を時系列に整理。
+                                    <br />
+                                    朝の忙しい時間帯でも一目で判断できるデザインを意識しました。
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <Heading text="FEATURES" />
-                        <div></div>
-                    </div>
+                    <Link href="/Reitime" className={styles.MoreWork}>
+                        Webサイトを見る
+                    </Link>
                     <Footer />
                 </div>
             </div>

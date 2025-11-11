@@ -85,10 +85,11 @@
 
 .FeaturesBox {
     display: flex;
-    gap: 50px;
-    margin: 100px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
 }
-
 
 .Head {
     color: #403A2F;
@@ -98,6 +99,18 @@
     color: #857f73;
     font-size: 0.8rem;
 }
+
+.HeadRight {
+    text-align: right;
+    color: #403A2F;
+}
+
+.TextRight {
+    text-align: right;
+    color: #857f73;
+    font-size: 0.8rem;
+}
+
 
 .MoreWork {
     width: 300px;

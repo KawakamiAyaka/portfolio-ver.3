@@ -136,7 +136,7 @@ export default function WorksTemplate() {
 
                             <div className={styles.FeaturesBox}>
                                 <Image
-                                    className={styles.HunterMock1}
+                                    className={styles.HunterMock}
                                     src="/HunterMock3.svg"
                                     alt="ものしりハンター機能説明用モックアップ"
                                     width={400}
