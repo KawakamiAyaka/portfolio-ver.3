@@ -23,11 +23,10 @@ export default function WorksTemplate() {
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
-                        designLink="https://www.figma.com/..."
+                        designLink="https://www.figma.com/design/O7mzbcQDc0YOzjZYrVL9C3/%E3%82%82%E3%81%AE%E3%81%97%E3%82%8A%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC?node-id=0-1&t=izLuy7WPxUnNSYjN-1"
                         websiteLink="https://example.com/wkwk"
                         image="/Hunter.png"
                         imageAlt="ものしりハンターのサムネイル"
-                        note="この作品は現在公開されていません"
                     />
 
                     <div className={styles.More}>
