@@ -65,8 +65,8 @@
 .ColorText {
     margin: 0 auto;
     width: 50%;
-    font-size: 0.9rem;
     color: #403A2F;
+    font-size: 0.9rem;
     margin-top: 30px;
 }
 
@@ -76,4 +76,80 @@
 
 .Accent {
     color: #FF7530;
+}
+
+.Features {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.FeaturesBox {
+    display: flex;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+
+.Head {
+    color: #403A2F;
+}
+
+.Text {
+    color: #857f73;
+    font-size: 0.8rem;
+}
+
+.MoreWork {
+    width: 300px;
+    height: 50px;
+    border: #DE9F84 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+    color: #DE9F84;
+    z-index: 1;
+
+    text-decoration: none;
+    /* Link の下線を消す */
+    cursor: pointer;
+    /* クリック感 */
+}
+
+.MoreWork::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* top/left/width/height をまとめて指定 */
+    background: #DE9F84;
+    transform: scale(0, 1);
+    /* 横方向にゼロ */
+    transform-origin: left top;
+    /* 左から右に展開 */
+    transition: transform .3s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    /* 中のテキストより奥へ */
+}
+
+.MoreWork:hover {
+    color: #fff;
+}
+
+.MoreWork:hover::after {
+    transform: scale(1, 1);
+    /* 横いっぱいに広がる */
+}
+
+.WorksBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 100px auto;
+    max-width: 900px;
 }
