@@ -24,7 +24,7 @@ export default function WorksTemplate() {
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
                         designLink="https://www.figma.com/design/O7mzbcQDc0YOzjZYrVL9C3/%E3%82%82%E3%81%AE%E3%81%97%E3%82%8A%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC?node-id=0-1&t=izLuy7WPxUnNSYjN-1"
-                        websiteLink="https://example.com/wkwk"
+                        websiteLink="https://monosiri-hunter.vercel.app/"
                         image="/Hunter.png"
                         imageAlt="ものしりハンターのサムネイル"
                     />
@@ -156,7 +156,7 @@ export default function WorksTemplate() {
                         </div>
                     </div>
 
-                    <Link href="/Hunter" className={styles.MoreWork}>
+                    <Link href="https://monosiri-hunter.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>
 

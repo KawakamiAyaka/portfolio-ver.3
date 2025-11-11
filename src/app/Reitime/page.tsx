@@ -23,8 +23,8 @@ export default function WorksTemplate() {
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma"
-                        designLink="https://www.figma.com/..."
-                        websiteLink="https://example.com/wkwk"
+                        designLink="https://www.figma.com/design/w241INhxVnaIuXjmGDMpgV/%E3%83%A0%E3%82%B3%E3%82%A6%E3%83%AA%E3%83%A7%E3%82%A6?node-id=0-1&t=8IYiBR1JRd7Nz218-1"
+                        websiteLink="https://teamapp-three.vercel.app/"
                         image="/Reitime.png"
                         imageAlt="レイタイムのサムネイル"
                     />
@@ -138,7 +138,7 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Link href="/Reitime" className={styles.MoreWork}>
+                    <Link href="https://teamapp-three.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>
                     <Footer />

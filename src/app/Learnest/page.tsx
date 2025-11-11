@@ -34,8 +34,8 @@ export default function WorksTemplate() {
                         tags={["個人制作"]}
                         position="担当：企画 / デザイン / コーディング"
                         tools="ツール：Figma / Illustrator / VSCode"
-                        designLink="https://www.figma.com/..."
-                        websiteLink="https://example.com/wkwk"
+                        designLink="https://www.figma.com/design/Ec5sLkNAYrNUPNPEVQJg5Y/Learnest?node-id=1-7&t=l8U4RRcL7m76uHP3-1"
+                        websiteLink="https://learnest-lake.vercel.app/"
                         image="/learnest.png"
                         imageAlt="Learnestのサムネイル"
                     />
@@ -138,7 +138,7 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Link href="/FamilyConnect" className={styles.MoreWork}>
+                    <Link href="https://learnest-lake.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>
 

@@ -34,8 +34,7 @@ export default function WorksTemplate() {
                         tags={["チーム制作"]}
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
-                        designLink="https://www.figma.com/..."
-                        websiteLink="https://example.com/wkwk"
+                        designLink="https://www.figma.com/design/4OwOGTdDu1WGINPyLQ7LYN/%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E6%8E%A2%E6%A4%9C%E9%9A%8A?node-id=0-1&t=vrX3q2dZ2sEjV64E-1"
                         image="/Wkwk.png"
                         imageAlt="わくわく探検隊のサムネイル"
                         note="この作品は現在公開されていません"
@@ -152,8 +151,11 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Link href="/Hunter" className={styles.MoreWork}>
-                        Webサイトを見る
+                    <Link
+                        href="https://www.figma.com/design/4OwOGTdDu1WGINPyLQ7LYN/%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E6%8E%A2%E6%A4%9C%E9%9A%8A?node-id=0-1&t=vrX3q2dZ2sEjV64E-1"
+                        className={styles.MoreWork}
+                    >
+                        デザインファイルを見る
                     </Link>
                     <Footer />
                 </div>

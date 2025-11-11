@@ -23,8 +23,8 @@ export default function WorksTemplate() {
                         tags={["個人制作"]}
                         position="担当：企画 / デザイン / コーディング"
                         tools="ツール：Figma / Illustrator / VSCode"
-                        designLink="https://www.figma.com/..."
-                        websiteLink="https://example.com/wkwk"
+                        designLink="https://www.figma.com/design/Cgsqb1UR2WS5WYzEEmLo0j/Family-Connect?node-id=0-1&t=FdWG0DFMNM4dGRcL-1"
+                        websiteLink="https://kawakamiayaka.github.io/family-connect/"
                         image="/Fam.png"
                         imageAlt="FamilyConnectのサムネイル"
                     />
@@ -151,7 +151,10 @@ export default function WorksTemplate() {
                         </div>
                     </div>
 
-                    <Link href="/FamilyConnect" className={styles.MoreWork}>
+                    <Link
+                        href="https://kawakamiayaka.github.io/family-connect/"
+                        className={styles.MoreWork}
+                    >
                         Webサイトを見る
                     </Link>
 
