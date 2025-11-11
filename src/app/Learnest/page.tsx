@@ -4,7 +4,7 @@ import Heading from "@/components/Heading";
 import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
-import Logo from "@/components/Logo";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
 
@@ -92,8 +92,56 @@ export default function WorksTemplate() {
                     </div>
                     <div>
                         <Heading text="FEATURES" />
-                        <div></div>
+                        <div className={styles.MockBox}>
+                            <Image
+                                className={styles.HunterMock1}
+                                src="/LearnestMock1.svg"
+                                alt="ものしりハンター機能説明用モックアップ"
+                                width={500}
+                                height={800}
+                            />
+                            <div>
+                                <Image
+                                    className={styles.HunterMock1}
+                                    src="/LearnestMock2.svg"
+                                    alt="ものしりハンター機能説明用モックアップ"
+                                    width={500}
+                                    height={365}
+                                />
+                                <h2 className={styles.Head}>
+                                    デザイナーのための
+                                    <br />
+                                    最適なフィードバック環境
+                                </h2>
+                                <p className={styles.Text}>
+                                    SNS形式で不特定多数のデザイナーから意見をもらえる場所。
+                                    <br />
+                                    星評価から書き込み形式まで、幅広い方法で実りあるフィードバックを実現できます。
+                                </p>
+                            </div>
+                        </div>
+                        <div className={styles.Mock}>
+                            <Image
+                                className={styles.HunterMock1}
+                                src="/LearnestMock3.svg"
+                                alt="ものしりハンター機能説明用モックアップ"
+                                width={500}
+                                height={500}
+                            />
+                            <div>
+                                <h2 className={styles.Head}>意図が伝わる作品投稿</h2>
+                                <p className={styles.Text}>
+                                    共通テーマに沿って制作・投稿することで、
+                                    <br />
+                                    デザインの意図が明確に伝わり、より的確なフィードバックが得られる。
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <Link href="/FamilyConnect" className={styles.MoreWork}>
+                        Webサイトを見る
+                    </Link>
+
                     <Footer />
                 </div>
             </div>
