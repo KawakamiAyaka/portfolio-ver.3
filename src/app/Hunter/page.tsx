@@ -56,8 +56,14 @@ export default function WorksTemplate() {
                         />
                     </div>
 
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/HunterScreen.svg"
+                        alt="ものしりハンタースクリーンショット集"
+                        width={1000}
+                        height={500}
+                    />
                     <div className={styles.Color}>
-                        <Heading text="COLOR" />
                         <div>
                             <div className={styles.ColorPalletBox}>
                                 <div>
@@ -85,13 +91,6 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/HunterScreen.svg"
-                        alt="ものしりハンタースクリーンショット集"
-                        width={1000}
-                        height={500}
-                    />
 
                     <Link href="https://monosiri-hunter.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る

@@ -29,6 +29,10 @@
     margin: 0 auto;
 }
 
+.Color {
+    margin: 100px 0;
+}
+
 .ColorPalletBox {
     display: flex;
     justify-content: center;

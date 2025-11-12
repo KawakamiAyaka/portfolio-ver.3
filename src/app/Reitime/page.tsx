@@ -53,8 +53,14 @@ export default function WorksTemplate() {
                             text="電車遅延という避けられない問題を、デザインの力で“安心”に変えることを狙いました。 リアルタイム通知とカウントダウン表示で即時対応をサポートし、振替案提案で行動の選択肢を提示して迷いを減らしました。 シンプルで見やすいUIにより、通勤中でも片手で操作できる設計としています。 遅延が発生しても、焦らず、無駄なく、次の一歩を踏み出せる。 「時間を守る」ことをデザインで支えます。"
                         />
                     </div>
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/RaitimeScreen.svg"
+                        alt="レイタイムスクリーンショット集"
+                        width={1000}
+                        height={500}
+                    />
                     <div className={styles.Color}>
-                        <Heading text="COLOR" />
                         <div className={styles.ColorPalletBox}>
                             <div>
                                 <div className={styles.MainColor}></div>
@@ -80,13 +86,6 @@ export default function WorksTemplate() {
                             </p>
                         </div>
                     </div>
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/RaitimeScreen.svg"
-                        alt="レイタイムスクリーンショット集"
-                        width={1000}
-                        height={500}
-                    />
                     <Link href="https://teamapp-three.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>

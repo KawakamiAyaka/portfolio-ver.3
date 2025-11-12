@@ -64,8 +64,14 @@ export default function WorksTemplate() {
                             text="目的地までの道のりを「探索」「競争」「収集」で楽しめるよう設計しました。 コインを探しながら歩くことで小さな発見を生み、友達と競い合うことで達成感を演出します。 ガチャでキャラクターを集めることでコレクションの喜びを加え、歩くことそのものを“遊び”に変えることを狙いました。"
                         />
                     </div>
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/WkwkScreen.svg"
+                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
+                        width={1000}
+                        height={500}
+                    />
                     <div className={styles.Color}>
-                        <Heading text="COLOR" />
                         <div>
                             <div className={styles.ColorPalletBox}>
                                 <div>
@@ -89,13 +95,6 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/WkwkScreen.svg"
-                        alt="わくわく探検隊スクリーンショット集" // 代替テキスト（必須！）
-                        width={1000}
-                        height={500}
-                    />
                     <Link
                         href="https://www.figma.com/design/4OwOGTdDu1WGINPyLQ7LYN/%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E6%8E%A2%E6%A4%9C%E9%9A%8A?node-id=0-1&t=vrX3q2dZ2sEjV64E-1"
                         className={styles.MoreWork}

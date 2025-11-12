@@ -70,13 +70,6 @@ export default function Profile() {
                             title="レイタイム"
                             href="/Reitime"
                         />
-
-                        {/* <WorksThumbnail
-                            image="FamilyConnectThumbnail.svg"
-                            type="Webサイト"
-                            title="FamilyConnect"
-                            href="/FamilyConnect"
-                        /> */}
                         <WorksThumbnail
                             image="LearnestThumbnail.svg"
                             type="Webサイト"

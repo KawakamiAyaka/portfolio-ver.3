@@ -66,8 +66,14 @@ export default function WorksTemplate() {
                             text="「日常の移動をゲームに変える」ことをテーマに、現実世界とゲームの世界がリアルタイムで自然につながるデザインを目指しました。 リアルなマップUIで自分の行動が地図に残る体験を強調し、実績機能で達成感を可視化しています。 チーム対戦や通知機能によって、競い合いながら継続できるモチベーションを設計しました。 「歩く＝退屈」から「歩く＝楽しい」へ。デザインの力で、日常の行動をポジティブに変えることを狙いました。"
                         />
                     </div>
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/RihlarScreen.png"
+                        alt="わくわく探検隊スクリーンショット集"
+                        width={1000}
+                        height={500}
+                    />
                     <div className={styles.Color}>
-                        <Heading text="COLOR" />
                         <div>
                             <div className={styles.ColorPalletBox}>
                                 <div>
@@ -95,13 +101,6 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/RihlarScreen.png"
-                        alt="わくわく探検隊スクリーンショット集"
-                        width={1000}
-                        height={500}
-                    />
                     <Link
                         href="https://www.figma.com/design/BFipcBkJSMMyenTxPb4Zkb/Rihlar?node-id=0-1&t=KyslNXli9ts3hwuv-1"
                         className={styles.MoreWork}
