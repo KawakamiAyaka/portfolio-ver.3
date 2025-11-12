@@ -43,7 +43,7 @@ export default function Profile() {
                                 この作品を見る
                             </Link>
                         </div>
-                        <div className={styles.ThumbnailBox}>
+                        {/* <div className={styles.ThumbnailBox}>
                             <Image
                                 className={styles.WkwkThumbnail}
                                 src="/WkwkThumbnail.png" // public/vercel.svg に置いた画像
@@ -55,9 +55,15 @@ export default function Profile() {
                             <Link href="/Wkwk" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.WorksBox}>
+                        <WorksThumbnail
+                            image="WkwkThumbnail.svg"
+                            type="Webサイト"
+                            title="レイタイム"
+                            href="/Reitime"
+                        />
                         <WorksThumbnail
                             image="RaitimeThumbnail.svg"
                             type="Webサイト"
@@ -65,12 +71,12 @@ export default function Profile() {
                             href="/Reitime"
                         />
 
-                        <WorksThumbnail
+                        {/* <WorksThumbnail
                             image="FamilyConnectThumbnail.svg"
                             type="Webサイト"
                             title="FamilyConnect"
                             href="/FamilyConnect"
-                        />
+                        /> */}
                         <WorksThumbnail
                             image="LearnestThumbnail.svg"
                             type="Webサイト"
