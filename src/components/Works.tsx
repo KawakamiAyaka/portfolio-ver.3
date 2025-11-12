@@ -6,10 +6,12 @@ type Props = {
     type: string;
     title: string;
     tags: string[];
+    summary: string; // ← 作品概要を追加
+    period: string;
     position: string;
     tools: string;
-    designLink?: string; // デザインファイル（任意）
-    websiteLink?: string; // Webサイト（任意）← 追加
+    designLink?: string;
+    websiteLink?: string;
     image: string;
     imageAlt: string;
     note?: string;
@@ -19,10 +21,12 @@ export default function Works({
     type,
     title,
     tags,
+    summary, // ← 追加
+    period,
     position,
     tools,
     designLink,
-    websiteLink, // ← 追加
+    websiteLink,
     image,
     imageAlt,
     note,
@@ -44,6 +48,8 @@ export default function Works({
                     ))}
                 </div>
 
+                <p className={styles.summary}>{summary}</p>
+                <p className={styles.period}>{period}</p>
                 <p className={styles.position}>{position}</p>
                 <p className={styles.tools}>{tools}</p>
 

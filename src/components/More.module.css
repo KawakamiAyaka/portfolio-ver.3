@@ -1,24 +1,27 @@
 .more {
     width: 80%;
     margin: 50px auto;
-    border-bottom: 1px solid #898888;
-}
-
-.TitleBox {
-    width: 200px;
-    height: 30px;
-    background: #898888;
-    border-radius: 30px;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .Title {
-    display: flex;
-    justify-content: center;
-    line-height: 1.8rem;
+    padding: 6px 40px;
+    background: #a2a2a2;
+    border-radius: 5px;
     color: #fff;
+    margin: 0 20px 0 20px;
+}
+
+.Subtitle {
+    color: #51a69c;
+    font-size: 1.7rem;
+    margin: 30px 20px 30px 20px;
 }
 
 .text {
-    margin: 20px 20px;
     color: #403A2F;
+    margin-bottom: 50px;
+    font-size: 0.9rem;
+    margin: 0 20px 40px 20px;
+    white-space: pre-line;
 }

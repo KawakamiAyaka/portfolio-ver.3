@@ -20,7 +20,9 @@ export default function WorksTemplate() {
                     <Works
                         type="Webサイト"
                         title="ものしりハンター"
-                        tags={["チーム制作"]}
+                        tags={["チーム制作", "2年後期"]}
+                        summary="カメラで身の回りの物を撮影し名前を知って集めることで、子どもが楽しく学べる知育サイト"
+                        period="制作期間：2024年9月〜2月(デザイン設計期間：約2ヶ月半)"
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
                         designLink="https://www.figma.com/design/O7mzbcQDc0YOzjZYrVL9C3/%E3%82%82%E3%81%AE%E3%81%97%E3%82%8A%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC?node-id=0-1&t=izLuy7WPxUnNSYjN-1"
@@ -31,30 +33,28 @@ export default function WorksTemplate() {
 
                     <div className={styles.More}>
                         <More
-                            title="概要"
-                            text="カメラで身の回りの物を撮影し、名前を知って集めることで、子どもが楽しく学べる知育サイト。"
+                            title="課題"
+                            subtitle="好奇心を「学びの楽しさ」につなげられていない"
+                            text="小さな子どもは、日々たくさんのものに興味を持ちますが、名前を知らないことも多く、せっかくの好奇心が一瞬で終わってしまうことがあります。 そのたびに親が教えることもできますが、毎回対応するのは負担になりがちです。 
+                                また、既存の物体認識ツールを使っても「名前を知る」だけで終わってしまい、子どもが夢中になれる「楽しさ」や「続けたくなる仕組み」が欠けています。"
                         />
                         <More
-                            title="ターゲット/ゴール"
-                            text="好奇心旺盛な年長～小1の子どもを中心に、発見と収集を通じて学ぶことの楽しさを実感してもらう。"
+                            title="ターゲット"
+                            subtitle="好奇心旺盛な子どもと、学びを支えたい親"
+                            text={`・主ターゲット：年長〜小学校低学年の子ども（3〜7歳） カメラを通して「これは何だろう？」と感じた瞬間に楽しめる子です。 
+                                ・副ターゲット：子どもの知的好奇心を伸ばしたい保護者です。 外出先や日常の中で、学びのきっかけを与えたいと考えている層です。`}
                         />
                         <More
-                            title="制作背景"
-                            text="好奇心いっぱいの子どもたちが、「知らないものを見つけて学ぶ楽しさ」を感じられる遊びとして考案。"
+                            title="ゴール"
+                            subtitle="発見から学び、学びから達成感へ"
+                            text="知らないものを「発見」し、名前を「知る」ことで喜びを感じます。 集めたものを「図鑑」で振り返ることで、学びの定着と達成感を得ることを目指しています。 遊びながら自然にひらがな・単語を覚えるきっかけを作ることを目的としています。"
                         />
                         <More
-                            title="制作期間"
-                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月"
+                            title="デザイン"
+                            subtitle="学びを「遊び」に変えるデザイン体験"
+                            text="学ぶことを「義務」ではなく「楽しい遊び」として体験できるようにすることが狙いです。 そのため、子どもが安心して世界に入り込めるよう、世界観を重視したデザインを行いました。 現実とかけ離れない子供部屋のような背景や図鑑モチーフを採用し、日常に馴染む見た目を意識しています。 また、親しみやすい暖色系の色づかいで温かみを与えることで、子どもが自然と触りたくなる「やさしい世界観」を大切にしています。"
                         />
                     </div>
-
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/HunterScreen.svg"
-                        alt="ものしりハンタースクリーンショット集"
-                        width={1000}
-                        height={500}
-                    />
 
                     <div className={styles.Color}>
                         <Heading text="COLOR" />
@@ -85,76 +85,13 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-
-                    <div>
-                        <Heading text="FEATURES" />
-                        <div className={styles.Features}>
-                            <div className={styles.FeaturesBox}>
-                                <Image
-                                    className={styles.HunterMock1}
-                                    src="/HunterMock1.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
-                                    width={400}
-                                    height={200}
-                                />
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>
-                                        知的好奇心を刺激するものしり機能
-                                    </h2>
-                                    <p className={styles.Text}>
-                                        カメラで物体を撮影すると、ChatGPT APIを活用して
-                                        <br />
-                                        「名前」と「説明」がひらがなで表示される機能。
-                                        <br />
-                                        子どもが身近なものに興味を持ち、学びにつながる体験を目指しました。
-                                        子どもに馴染む世界観と直感的な操作性を両立できるように意識しました。
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className={styles.FeaturesBox}>
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>
-                                        カード型ひらがな並べ替えミニゲーム
-                                    </h2>
-                                    <p className={styles.Text}>
-                                        撮影した物体の名前をひらがなに分解し、正しい順番に並べるゲーム。
-                                        <br />
-                                        遊びながら自然にひらがなや単語を覚えられるよう設計しました。
-                                        何度でも挑戦できるため、繰り返し遊ぶ中で少しずつ上達できる仕組みです。
-                                    </p>
-                                </div>
-                                <Image
-                                    className={styles.HunterMock}
-                                    src="/HunterMock2.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
-                                    width={400}
-                                    height={200}
-                                />
-                            </div>
-
-                            <div className={styles.FeaturesBox}>
-                                <Image
-                                    className={styles.HunterMock}
-                                    src="/HunterMock3.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
-                                    width={400}
-                                    height={200}
-                                />
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>知識を集める図鑑機能</h2>
-                                    <p className={styles.Text}>
-                                        これまでに知った物体の名前を自分だけの「知識の本」として
-                                        <br />
-                                        収集・閲覧できる図鑑機能。
-                                        <br />
-                                        現実と乖離しない柔らかな装飾と色合いで、プレイ中の世界観を自然に引き継ぐようにデザインしました。
-                                        「学ぶ」体験を、子どもにとって身近で温かみのある遊びとして感じられるようにしています。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/HunterScreen.svg"
+                        alt="ものしりハンタースクリーンショット集"
+                        width={1000}
+                        height={500}
+                    />
 
                     <Link href="https://monosiri-hunter.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る

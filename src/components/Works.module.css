@@ -1,9 +1,11 @@
 .FirstBox {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    gap: 50px;
+    /* gap: ; */
 }
 
 .type {
@@ -13,7 +15,7 @@
 }
 
 .TitleBox {
-    width: 300px;
+    width: 310px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -27,18 +29,30 @@
 
 .Tag {
     background: #e9e9e9;
-    padding: 6px 20px;
+    padding: 7px 20px;
     border-radius: 10px;
     color: #403A2F;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px rgba(150, 150, 150, 0.381);
 }
 
-.position {
+.summary {
+    width: 95%;
+    color: #403A2F;
+    margin-top: 30px;
+
+}
+
+.period {
     font-size: 0.8rem;
     margin-top: 30px;
+    color: gray;
 }
 
-.tools {
+.tools,
+.position {
     font-size: 0.8rem;
+    color: gray;
 }
 
 .LinkButton {
