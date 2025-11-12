@@ -41,8 +41,8 @@ export default function Profile() {
                             </p>
                             <Image
                                 className={styles.MyImage}
-                                src="/Hobby.svg" // public/vercel.svg に置いた画像
-                                alt="顔写真" // 代替テキスト（必須！）
+                                src="/Hobby.svg"
+                                alt="顔写真"
                                 width={600}
                                 height={150}
                             />
@@ -52,59 +52,13 @@ export default function Profile() {
                     <div className={styles.SkillBox}>
                         <Heading text="SKILL" />
                         <div className={styles.Skill}>
-                            <div className={styles.DesignSkill}>
-                                <SkillBar
-                                    label="Figma"
-                                    percent={85}
-                                    color="#94CB9B"
-                                    borderColor="#94CB9B"
-                                    fillColor="#DFF2E1" // オレンジの薄色ベース
-                                />
-                                <SkillBar
-                                    label="Illustrator"
-                                    percent={80}
-                                    color="#94CB9B"
-                                    borderColor="#94CB9B"
-                                    fillColor="#DFF2E1" // オレンジの薄色ベース
-                                />
-                                <SkillBar
-                                    label="Photoshop"
-                                    percent={75}
-                                    color="#94CB9B"
-                                    borderColor="#94CB9B"
-                                    fillColor="#DFF2E1" // オレンジの薄色ベース
-                                />
-                            </div>
-                            <div className={styles.CodingSkill}>
-                                <SkillBar
-                                    label="HTML"
-                                    percent={80}
-                                    color="#9ACAC4"
-                                    borderColor="#9ACAC4"
-                                    fillColor="#e4f5f3ff" // オレンジの薄色ベース
-                                />
-                                <SkillBar
-                                    label="CSS"
-                                    percent={80}
-                                    color="#9ACAC4"
-                                    borderColor="#9ACAC4"
-                                    fillColor="#e4f5f3ff" // オレンジの薄色ベース
-                                />
-                                <SkillBar
-                                    label="Javascript"
-                                    percent={72}
-                                    color="#9ACAC4"
-                                    borderColor="#9ACAC4"
-                                    fillColor="#e4f5f3ff" // オレンジの薄色ベース
-                                />
-                                <SkillBar
-                                    label="Next . js"
-                                    percent={72}
-                                    color="#9ACAC4"
-                                    borderColor="#9ACAC4"
-                                    fillColor="#e4f5f3ff" // オレンジの薄色ベース
-                                />
-                            </div>
+                            <Image
+                                className={styles.SkillIcon}
+                                src="/SkillIcon.svg"
+                                alt="スキルアイコン"
+                                width={1000}
+                                height={120}
+                            />
                         </div>
                     </div>
                     <Heading text="ACHIEVEMENT" />
