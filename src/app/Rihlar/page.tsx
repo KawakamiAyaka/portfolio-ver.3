@@ -31,39 +31,41 @@ export default function WorksTemplate() {
                     <Works
                         type="アプリケーション"
                         title="Rihlar（リフラル）"
-                        tags={["チーム制作"]}
+                        tags={["チーム制作", "2年前期"]}
+                        summary="街を歩くことで自分の陣地を広げ、移動そのものを楽しめる陣取り型ライフログアプリ"
+                        period="制作期間：2024年4月〜8月(デザイン設計期間：約2ヶ月半)"
                         position="担当：企画 / デザイン"
                         tools="ツール：Figma / Illustrator"
                         designLink="https://www.figma.com/design/BFipcBkJSMMyenTxPb4Zkb/Rihlar?node-id=0-1&t=KyslNXli9ts3hwuv-1"
                         image="/Rihlar.png"
-                        imageAlt="わくわく探検隊のサムネイル"
+                        imageAlt="Rihlarのサムネイル"
                         note="この作品は現在公開されていません"
                     />
                     <div className={styles.More}>
                         <More
-                            title="概要"
-                            text="街を歩くことで自分の陣地を広げ、移動そのものを楽しめる陣取り型ライフログアプリ。"
+                            title="課題"
+                            subtitle="歩くことが「ただの移動」になっている"
+                            text="ランニングアプリや記録アプリは多いものの、普段の「歩くこと」自体に楽しさや達成感を感じられる仕組みは少ないのが現状です。 移動は単なる手段となり、運動不足や歩数の減少につながっています。 毎日の移動そのものに「価値」と「目的」を与えることが課題です。"
                         />
                         <More
-                            title="ターゲット/ゴール"
-                            text="健康のために歩数を増やしたい人を中心に、歩くことを習慣化し自然に1日1万歩を目指せる体験を提供。"
+                            title="ターゲット"
+                            subtitle="歩くことを「遊び」に変えたい人たち"
+                            text={`・主ターゲット：歩くことを「義務」ではなく「遊び」に変えたい若者層（学生・社会人） 
+                                通勤・通学などの移動をゲームとして楽しみたい人です。 
+                                ・副ターゲット：ヘルスケア層、運動不足層 
+                                健康維持を目的に歩く人や、1日1万歩を意識している人、手軽に身体を動かすきっかけを求めている人です。`}
                         />
                         <More
-                            title="制作背景"
-                            text="一日一万歩を目指し、日々の歩数を少しずつでも伸ばしたくなるきっかけを作りたいという思いから企画。"
+                            title="ゴール"
+                            subtitle="移動を「達成感のある体験」に変える"
+                            text="移動や歩行を「自分の陣地を広げる」という体験に変えることで、毎日の行動がゲームの一部になります。 チームや仲間とのつながりを通じて自然に歩数を増やし、歩くことを健康維持だけでなく、自己表現やコミュニケーションの手段にすることを目指しています。"
                         />
                         <More
-                            title="制作期間"
-                            text="約6か月（企画設計・開発を含む）そのうちデザイン設計期間：約1か月半"
+                            title="デザイン"
+                            subtitle="日常の移動を「ゲーム」に変えるデザイン"
+                            text="「日常の移動をゲームに変える」ことをテーマに、現実世界とゲームの世界がリアルタイムで自然につながるデザインを目指しました。 リアルなマップUIで自分の行動が地図に残る体験を強調し、実績機能で達成感を可視化しています。 チーム対戦や通知機能によって、競い合いながら継続できるモチベーションを設計しました。 「歩く＝退屈」から「歩く＝楽しい」へ。デザインの力で、日常の行動をポジティブに変えることを狙いました。"
                         />
                     </div>
-                    <Image
-                        className={styles.WkwkScreen}
-                        src="/RihlarScreen.png"
-                        alt="わくわく探検隊スクリーンショット集"
-                        width={1000}
-                        height={500}
-                    />
                     <div className={styles.Color}>
                         <Heading text="COLOR" />
                         <div>
@@ -93,71 +95,13 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <Heading text="FEATURES" />
-                        <div className={styles.Features}>
-                            <div className={styles.FeaturesBox}>
-                                <Image
-                                    className={styles.HunterMock1}
-                                    src="/RihlarMock1.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
-                                    width={400}
-                                    height={400}
-                                />
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>
-                                        現実世界を舞台にした陣取りゲーム
-                                    </h2>
-                                    <p className={styles.Text}>
-                                        GPSで訪れた場所が自分の陣地になるゲーム。
-                                        <br />
-                                        日々の移動を“ゲームの進行”に変えることで、健康に楽しく続けられる仕組みです。
-                                        <br />
-                                        マップ中心の画面構成で、情報量を最小限に整理しました。
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className={styles.FeaturesBox}>
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.HeadRight}>続けたくなる仕組み</h2>
-                                    <p className={styles.TextRight}>
-                                        達成感を刺激する実績システムを搭載。
-                                        <br />
-                                        集めた実績が、自分だけの冒険の記録になります。
-                                        <br />
-                                        出先で撮った写真が陣地を強化し、日々の歩きを思い出として残せます。
-                                    </p>
-                                </div>
-                                <Image
-                                    className={styles.HunterMock}
-                                    src="/RihlarMock2.svg"
-                                    alt="ものしりハンター機能説明用モックアップ"
-                                    width={400}
-                                    height={400}
-                                />
-                            </div>
-
-                            <div className={styles.FeaturesBox}>
-                                <Image
-                                    className={styles.HunterMock}
-                                    src="/RihlarMock3.svg"
-                                    alt="ものしり機能説明用モックアップ"
-                                    width={400}
-                                    height={400}
-                                />
-                                <div className={styles.TextBox}>
-                                    <h2 className={styles.Head}>もっと面白くなる戦略性</h2>
-                                    <p className={styles.Text}>
-                                        プレイを重ねることで、盤面を変えるアイテムを獲得。
-                                        <br />
-                                        続けるほど強くなる成長感を演出しました。
-                                        シンプルなアイコンと少しのユーモアで、地図上でも個性が際立つデザインにしました。{" "}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Image
+                        className={styles.WkwkScreen}
+                        src="/RihlarScreen.png"
+                        alt="わくわく探検隊スクリーンショット集"
+                        width={1000}
+                        height={500}
+                    />
                     <Link
                         href="https://www.figma.com/design/BFipcBkJSMMyenTxPb4Zkb/Rihlar?node-id=0-1&t=KyslNXli9ts3hwuv-1"
                         className={styles.MoreWork}
