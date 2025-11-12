@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import BackToTop from "@/components/BackToTop";
-import Heading from "@/components/Heading";
 import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
+import Lead from "@/components/Lead";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -101,6 +101,7 @@ export default function WorksTemplate() {
                     >
                         デザインファイルを見る
                     </Link>
+                    <Lead nextLink="/Reitime" />
                     <Footer />
                 </div>
             </div>

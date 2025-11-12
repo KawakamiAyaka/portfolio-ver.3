@@ -1,10 +1,9 @@
 import Header from "@/components/Header";
 import BackToTop from "@/components/BackToTop";
-import Heading from "@/components/Heading";
 import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
-import Logo from "@/components/Logo";
+import Lead from "@/components/Lead";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,6 +88,7 @@ export default function WorksTemplate() {
                     <Link href="https://teamapp-three.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>
+                    <Lead nextLink="/Learnest" />
                     <Footer />
                 </div>
             </div>
