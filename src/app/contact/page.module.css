@@ -62,6 +62,7 @@
 .email:hover {
     color: #B59B77;
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 /* 下線付きデザインにしたい場合（任意） */

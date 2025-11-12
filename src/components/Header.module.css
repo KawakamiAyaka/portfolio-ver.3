@@ -1,3 +1,4 @@
+/* ====== コンテナ ====== */
 .header {
     width: 90%;
     height: 100px;
@@ -11,75 +12,108 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     gap: 16px;
 }
 
 .nav {
     display: flex;
     gap: 30px;
-
+    margin-left: auto;
 }
 
+/* ====== リンク共通 ====== */
 .link {
     width: 150px;
     height: 50px;
-    color: #403A2F;
+    color: #403a2f;
     font-size: 1.3rem;
     text-decoration: none;
     text-align: center;
     padding: 10px 0 0 0;
     display: inline-block;
     position: relative;
-    /* 疑似要素の基準に */
     background: #fff;
     box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.381);
+    transition: color 0.3s ease;
     overflow: visible;
-    /* 下にはみ出せるように */
-    transition: 0.3s ease;
 }
 
-/* 色帯（border-top）はそのまま */
+/* 上の色帯 */
 .link:nth-child(1) {
-    border-top: 16px solid #DE9F84;
+    border-top: 16px solid #de9f84;
+    /* Profile */
 }
 
 .link:nth-child(2) {
-    border-top: 16px solid #A9E2DB;
+    border-top: 16px solid #a9e2db;
+    /* Works */
 }
 
 .link:nth-child(3) {
-    border-top: 16px solid #EEF06C;
+    border-top: 16px solid #eef06c;
+    /* Contact */
 }
 
-/* 下に伸びる部分を疑似要素で追加 */
+/* ====== 下線（各色指定） ====== */
+.link:nth-child(1)::after {
+    background-color: #de9f84;
+    /* Profile 下線色 */
+}
+
+.link:nth-child(2)::after {
+    background-color: #a9e2db;
+    /* Works 下線色 */
+}
+
+.link:nth-child(3)::after {
+    background-color: #eef06c;
+    /* Contact 下線色 */
+}
+
+/* 下線アニメーション設定 */
 .link::after {
     content: "";
     position: absolute;
-    top: 100%;
-    /* ボタンの下端から開始 */
+    bottom: 6px;
     left: 0;
-    width: 100%;
-    height: 0;
-    /* 初期は高さなし */
-    background: inherit;
-    /* 背景を継承 */
-    transition: height 0.3s ease;
-    z-index: 2;
-    /* 下の要素より前に出す */
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
 }
 
-/* hover時に下へ10px伸ばす */
+/* hoverで左→右に伸びる */
 .link:hover::after {
-    height: 10px;
+    width: 100%;
 }
 
+/* ====== 現在ページ（元の10px帯デザインに戻す） ====== */
 .active {
     position: relative;
     z-index: 3;
 }
 
 .active::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
     height: 10px;
+    /* ← 下に伸びる帯 */
+    z-index: 2;
+}
+
+/* active帯の色もリンクごとに指定 */
+.link:nth-child(1).active::after {
+    background: #fff;
+}
+
+.link:nth-child(2).active::after {
+    background: #fff;
+}
+
+.link:nth-child(3).active::after {
+    background: #fff;
 }
