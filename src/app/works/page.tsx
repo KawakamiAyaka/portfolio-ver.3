@@ -60,9 +60,9 @@ export default function Profile() {
                     <div className={styles.WorksBox}>
                         <WorksThumbnail
                             image="WkwkThumbnail.svg"
-                            type="Webサイト"
-                            title="レイタイム"
-                            href="/Reitime"
+                            type="アプリケーション"
+                            title="わくわく探検隊"
+                            href="/Wkwk"
                         />
                         <WorksThumbnail
                             image="RaitimeThumbnail.svg"
