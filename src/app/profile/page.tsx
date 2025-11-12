@@ -68,8 +68,8 @@ export default function Profile() {
                                 className={styles.FamAchievement}
                                 src="/RihlarAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="Rihlar銅賞受賞" // 代替テキスト（必須！）
-                                width={160}
-                                height={177}
+                                width={200}
+                                height={200}
                             />
                             <Link href="/Rihlar" className={styles.MoreWork}>
                                 この作品を見る
@@ -81,8 +81,8 @@ export default function Profile() {
                                 className={styles.HunterAchievement}
                                 src="/HunterAchievement2.svg" // public/vercel.svg に置いた画像
                                 alt="ものしりハンター敢闘賞受賞" // 代替テキスト（必須！）
-                                width={160}
-                                height={177}
+                                width={200}
+                                height={200}
                             />
                             <Link href="/Hunter" className={styles.MoreWork}>
                                 この作品を見る
@@ -93,8 +93,8 @@ export default function Profile() {
                                 className={styles.HunterAchievement}
                                 src="/HunterAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="ものしりハンターアイデア賞受賞" // 代替テキスト（必須！）
-                                width={160}
-                                height={177}
+                                width={200}
+                                height={200}
                             />
                             <Link href="/Hunter" className={styles.MoreWork}>
                                 この作品を見る
@@ -105,14 +105,14 @@ export default function Profile() {
                                 className={styles.wkwkAchievement}
                                 src="/WkwkAchievement.svg" // public/vercel.svg に置いた画像
                                 alt="わくわく探検隊努力賞受賞" // 代替テキスト（必須！）
-                                width={160}
-                                height={177}
+                                width={200}
+                                height={200}
                             />
                             <Link href="/Wkwk" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
                         </div>
-                        <div className={styles.Achievement}>
+                        {/* <div className={styles.Achievement}>
                             <Image
                                 className={styles.FamAchievement}
                                 src="/FamAchievement.svg" // public/vercel.svg に置いた画像
@@ -123,7 +123,7 @@ export default function Profile() {
                             <Link href="/FamilyConnect" className={styles.MoreWork}>
                                 この作品を見る
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.HistoryBox}>
                         <ul className={styles.timeline}>

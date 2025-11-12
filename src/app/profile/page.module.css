@@ -76,25 +76,11 @@
     display: flex;
 }
 
-.DesignSkill {
-    width: 100%;
-}
-
-.CodingSkill {
-    width: 100%;
-}
-
 .AchievementBox {
-    width: 80%;
     margin: 50px auto 100px auto;
     display: flex;
     justify-content: center;
-}
-
-.Achievement {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    gap: 30px;
 }
 
 .MoreWork {
