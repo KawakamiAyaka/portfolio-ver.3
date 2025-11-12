@@ -28,7 +28,7 @@
     font-size: 0.8rem;
     margin: 0;
     line-height: 0.1rem;
-    color: #a7a7a7;
+    color: #808080;
 }
 
 .NameBox {
@@ -57,8 +57,9 @@
 }
 
 .Text {
+    width: 90%;
     font-size: 0.9rem;
-    color: #9c9c9c;
+    color: #808080;
     margin: 30px 0;
 }
 
