@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
 import Lead from "@/components/Lead";
+import Learned from "@/components/Learned";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -91,6 +92,12 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
+                    <Learned
+                        head="装飾と情報のバランス設計"
+                        text={`図鑑画面やスマホを横に倒す指示画面で、直感的に操作やイメージを伝えるためにモチーフを多用しましたが、結果として装飾と情報の存在感が同等になり、視認性が下がってしまいました。 
+                            実装後の画面を見てその課題に気づき、今後は情報・機能・装飾のバランスを意識して設計したいと考えました。 
+                            シンプルでも直感的に伝わるデザインを目指し、配色や余白、レイアウトで世界観を表現できるよう、構図やUI設計のバランスについてさらに学んでいきたいと思っています。`}
+                    />
 
                     <Link href="https://monosiri-hunter.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る

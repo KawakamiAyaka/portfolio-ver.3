@@ -1,0 +1,63 @@
+/* マスキングテープ風ボックス */
+.Container {
+    position: relative;
+    /* タイトル配置の基準 */
+    margin: 3em auto;
+    /* 外側余白 */
+    background-color: #fffaf9;
+    /* ボックス背景色 */
+    max-width: 900px;
+    /* 最大幅 */
+}
+
+/* タイトル（テープ風） */
+.Container .Title {
+    background-image: repeating-linear-gradient(-45deg, #f3f3f3 0, #f3f3f3 4px, #fff 4px, #fff 8px);
+    /* ストライプ模様 */
+    transform: rotate(-3deg);
+    /* テープの傾き */
+    box-shadow: 0 2px 3px rgb(0 0 0 / .1);
+    /* テープの影 */
+    padding: .8em 3em;
+    /* 内側余白 */
+    line-height: 1;
+    /* 行の高さ */
+    position: absolute;
+    /* 親の左上に固定 */
+    top: -2em;
+    /* 上位置 */
+    left: 1.5em;
+    /* 左位置 */
+    display: inline-block;
+    /* 内容幅に合わせる */
+    font-size: 1em;
+    /* フォントサイズ */
+    width: auto;
+    /* 幅自動調整 */
+    max-width: calc(100% - 2em);
+    /* 最大幅調整 */
+    white-space: nowrap;
+    /* 折り返さない */
+    overflow: hidden;
+    /* はみ出し非表示 */
+    text-overflow: ellipsis;
+    /* 省略記号表示 */
+    color: #403A2F;
+}
+
+/* コンテンツ部分の余白 */
+.Container .box {
+    padding: 2em 3em 3em;
+    /* 内側余白 */
+}
+
+.Head {
+    color: #403A2F;
+    font-size: 1.6rem;
+}
+
+/* 段落の余白リセット */
+.Text {
+    margin: 0;
+    color: #49443b;
+}
