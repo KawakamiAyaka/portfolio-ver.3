@@ -6,7 +6,7 @@ const kiwi = Kiwi_Maru({ weight: ["400"], subsets: ["latin"], display: "swap" })
 export const Saint = Mrs_Saint_Delafield({ weight: ["400"], subsets: ["latin"], display: "swap" });
 
 // あなたの本番URL
-const SITE_URL = "https://KawakamiAyaka's-Portfolio";
+const SITE_URL = "https://kawakami-ayaka-portfolio.vercel.app";
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
