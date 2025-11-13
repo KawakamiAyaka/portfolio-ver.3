@@ -47,28 +47,93 @@
     border-radius: 6px;
 }
 
+.Box {
+    display: flex;
+}
+
 /* メール文字リンク */
 .email {
     font-size: 1.3rem;
     color: #403A2F;
-    font-weight: bold;
     text-decoration: none;
-    /* 下線を消す */
-    transition: color 0.2s ease, transform 0.2s ease;
-    cursor: pointer;
 }
 
-/* ホバー時のアクセント */
-.email:hover {
+/* .email:hover {
     color: #B59B77;
     transform: translateY(-2px);
-    cursor: pointer;
+} */
+
+/* 既存：CopyMark のホバーで上がるのを消す */
+.CopyMark:hover {
+    color: #B59B77;
+    /* transform: translateY(-5px); ←削除 */
 }
 
-/* 下線付きデザインにしたい場合（任意） */
-/* .email:hover {
-    text-decoration: underline;
-} */
+/* 吹き出し用に基準位置化 */
+.CopyMark {
+    position: relative;
+    /* ★追加 */
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    margin: 10px 20px 0 20px;
+    color: #403A2F;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    /* ★transformは除外 */
+}
+
+.CopyMark::after {
+    content: "コピー";
+    position: absolute;
+    left: 50%;
+    bottom: 115%;
+    /* ← 130% → 115% に変更：少し下へ */
+    transform: translateX(-50%) translateY(4px);
+    background: rgba(255, 255, 255, 0.98);
+    color: #403A2F;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    z-index: 10;
+}
+
+/* 吹き出しの三角 */
+.CopyMark::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 80%;
+    /* ← 120% → 107% に変更：合わせて少し下へ */
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #6A6863;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transition: opacity 0.18s ease;
+    z-index: 9;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* ホバー時に表示（キーボード操作も配慮） */
+.CopyMark:hover::after,
+.CopyMark:hover::before,
+.CopyMark:focus-visible::after,
+.CopyMark:focus-visible::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.copy {
+    text-align: center;
+    color: #777;
+}
 
 .dashed {
     width: 80%;
@@ -76,10 +141,4 @@
     margin: 30px auto;
     background-image: radial-gradient(circle, #c7c7c7 4px, transparent 5px);
     background-size: 16px 2px;
-}
-
-.copy {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #777;
 }
