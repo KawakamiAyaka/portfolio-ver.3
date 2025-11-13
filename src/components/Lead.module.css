@@ -9,19 +9,44 @@
 
 .BackButton,
 .NextButton {
-    display: inline-block;
-    padding: 10px 28px;
-    border: 1.5px solid #51a69c;
-    border-radius: 30px;
+    position: relative;
     font-size: 1rem;
-    color: #51a69c;
+    color: #403A2F;
     text-decoration: none;
-    transition: all 0.3s ease;
+    padding: 4px 0;
 }
 
-.BackButton:hover,
-.NextButton:hover {
-    background-color: #51a69c;
-    color: #fff;
-    transform: translateY(-2px);
+/* --- BackButton（右 → 左）--- */
+.BackButton::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    /* ← ここがポイント：右からスタート */
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #403A2F;
+    transition: width 0.3s ease;
+}
+
+.BackButton:hover::after {
+    width: 100%;
+}
+
+
+/* --- NextButton（左 → 右）--- */
+.NextButton::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* ← 今度は左からスタート */
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #403A2F;
+    transition: width 0.3s ease;
+}
+
+.NextButton:hover::after {
+    width: 100%;
 }
