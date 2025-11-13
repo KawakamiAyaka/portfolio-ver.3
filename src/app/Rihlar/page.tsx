@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
 import Lead from "@/components/Lead";
+import Learned from "@/components/Learned";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -101,6 +102,10 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
+                    <Learned
+                        head="言語仕様を踏まえた実装可能性の設計"
+                        text={`学んだばかりのインナーシャドウを多用したデザインを採用しましたが、実装段階で Swift では再現が難しいと指摘を受けました。その結果、想定した表現ができずデザインの大幅修正が必要になり、コミュニケーションコストも増える経験をしました。今後は使用言語やフレームワークの制約を理解した上でデザインを行い、実装可能性を踏まえた設計を意識していきたいです。`}
+                    />
                     <Link
                         href="https://www.figma.com/design/BFipcBkJSMMyenTxPb4Zkb/Rihlar?node-id=0-1&t=KyslNXli9ts3hwuv-1"
                         className={styles.MoreWork}
@@ -108,7 +113,6 @@ export default function WorksTemplate() {
                         デザインファイルを見る
                     </Link>
                     <Lead nextLink="/Wkwk" />
-
                     <Footer />
                 </div>
             </div>

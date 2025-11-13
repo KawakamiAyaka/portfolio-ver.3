@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
 import Lead from "@/components/Lead";
+import Learned from "@/components/Learned";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -85,6 +86,11 @@ export default function WorksTemplate() {
                             </p>
                         </div>
                     </div>
+                    <Learned
+                        head="チームでのフィードバックの価値"
+                        text={`はじめてのチーム制作では、同じ目線で意見を交わしながら進める中でフィードバックの重要性を強く実感しました。特に操作性や余白・階層・視線誘導などのレイアウト面の指摘を受けたことで、自分では完成度が高いと思っていた部分にも改善点があることを再認識しました。今後は積極的にフィードバックを求め、得た意見を整理して改善につなげ、意見を言いやすいチーム環境づくりにも貢献していきたいです。`}
+                    />
+
                     <Link href="https://teamapp-three.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>

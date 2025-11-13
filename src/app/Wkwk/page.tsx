@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
 import Lead from "@/components/Lead";
+import Learned from "@/components/Learned";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -95,6 +96,11 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
+                    <Learned
+                        head="動的UIと情報整理の重要性"
+                        text={`ゲーム中の動的な画面をイメージすることが難しく、結果として場面ごとのシチュエーションを優先した設計になってしまいました。制作期間が短い中で情報設計の経験が浅く、さらにキャラクターデザインも重なったことでタスク管理が複雑になりました。今後は早い段階でプロトタイプやアニメーションを作成し、動的なUI を前提にした設計と制作フローの改善を進めていきたいです。`}
+                    />
+
                     <Link
                         href="https://www.figma.com/design/4OwOGTdDu1WGINPyLQ7LYN/%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E6%8E%A2%E6%A4%9C%E9%9A%8A?node-id=0-1&t=vrX3q2dZ2sEjV64E-1"
                         className={styles.MoreWork}

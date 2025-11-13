@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Works from "@/components/Works";
 import More from "@/components/More";
 import Lead from "@/components/Lead";
+import Learned from "@/components/Learned";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -98,6 +99,11 @@ export default function WorksTemplate() {
                             </div>
                         </div>
                     </div>
+                    <Learned
+                        head="可変要素に強いUI設計の重要性"
+                        text={`ユーザーがアップするデザインの色や世界観が多様なため、固定された配色や装飾に寄せるほど馴染みにくくなり、全体が崩れて見える課題に気づきました。SNS形式の UI は可変要素が多く、どんな情報が入っても破綻しない規則性あるレイアウト設計が不可欠だと実感しました。今後は情報量や見た目が変化しても崩れない柔軟な UI を目指し、コンポーネント設計と可変レイアウトの学習を進めていきたいです。`}
+                    />
+
                     <Link href="https://learnest-lake.vercel.app/" className={styles.MoreWork}>
                         Webサイトを見る
                     </Link>
