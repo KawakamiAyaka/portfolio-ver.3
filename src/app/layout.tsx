@@ -27,6 +27,10 @@ export const metadata: Metadata = {
         locale: "ja_JP",
         type: "website",
     },
+    icons: {
+        icon: "/favicon.png", // ← 追加
+        shortcut: "/favicon.png",
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
