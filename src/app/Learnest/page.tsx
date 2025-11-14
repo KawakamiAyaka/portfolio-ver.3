@@ -39,7 +39,7 @@ export default function WorksTemplate() {
                         tools="ツール：Figma / Illustrator / VSCode"
                         designLink="https://www.figma.com/design/Ec5sLkNAYrNUPNPEVQJg5Y/Learnest?node-id=1-7&t=l8U4RRcL7m76uHP3-1"
                         websiteLink="https://learnest-lake.vercel.app/"
-                        image="/learnest.png"
+                        image="/Learnest.png"
                         imageAlt="Learnestのサムネイル"
                     />
                     <div className={styles.More}>
