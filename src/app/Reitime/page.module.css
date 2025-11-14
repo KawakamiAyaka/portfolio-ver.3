@@ -131,6 +131,7 @@
     overflow: hidden;
     color: #DE9F84;
     z-index: 1;
+    transition: 0.5s;
 
     text-decoration: none;
     /* Link の下線を消す */
